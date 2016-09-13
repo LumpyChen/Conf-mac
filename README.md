@@ -51,7 +51,7 @@ $ /Applications/Karabiner.app/Contents/Library/bin/karabiner export > ~/Desktop/
 Iterm2 is a great terminal app in OSX.
 
 ```
-curl -L https://raw.github.com/Lumpychen/Conf-mac/master/Iterm/Shell/install.sh | bash
+curl -L https://raw.githubusercontent.com/LumpyChen/Conf-mac/master/Iterm/shell/install.sh | bash
 ```
 
 
