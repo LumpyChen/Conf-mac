@@ -27,7 +27,7 @@ YOUR_PROFILE_NAME
 Then execute it.
 
 ```
-$ /Applications/Karabiner.app/Contents/Library/bin/karabiner export > ~/Desktop/karabiner-import.sh
+$ curl -L https://raw.githubusercontent.com/LumpyChen/Conf-mac/master/Karabiner/karabiner-import.sh | bash
 ```
 
 ### My Config
