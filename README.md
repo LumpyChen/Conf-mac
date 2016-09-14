@@ -50,8 +50,23 @@ $ curl -L https://raw.githubusercontent.com/LumpyChen/Conf-mac/master/Karabiner/
 
 Iterm2 is a great terminal app in OSX.
 
+Using my config, you should install a font called [Fira Code](https://github.com/tonsky/FiraCode) first.
+
+Execute the from shell:
+
 ```
 curl -L https://raw.githubusercontent.com/LumpyChen/Conf-mac/master/Iterm/shell/install.sh | bash
 ```
+
+Remember to quit your iterm2 when the shell executing.
+
+It's the raw config `plist` file.
+
+```
+https://raw.githubusercontent.com/LumpyChen/Conf-mac/master/Iterm/com.googlecode.iterm2.plist
+```
+
+
+---
 
 
