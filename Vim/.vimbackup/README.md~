@@ -91,3 +91,14 @@ set sync folder in advanced tab and click click "Set folder and restart Alfred".
 ---
 
 ## Vim
+
+I adapt [Spf13-vim](https://github.com/spf13/spf13-vim) as my packages library,
+which contains a lot of plugins.
+
+Somehow there has been bugs with my local setting,
+which forces me to alter bundles' source code,
+which had been installed by `vundle`.
+
+That's why I put all of my `vimrc` files & bundles in this repository.
+I overwrote the `Spf13-vim` config without modified it,
+but I still have to push all the files here......

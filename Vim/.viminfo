@@ -11,24 +11,57 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/vimrc
+~MSle0/webdeviconsconcealnerdtreebrackets = 0
+
+# Last Substitute Search Pattern:
+~MSle0~&webdeviconsconcealnerdtreebrackets = 0
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1473929086,,"wq"
+|2,0,1473982870,,"wq"
+:q
+|2,0,1473982762,,"q"
+:let g:webdevicons_conceal_nerdtree_brackets = 1
+|2,0,1473982215,,"let g:webdevicons_conceal_nerdtree_brackets = 1"
+:webdeviconsconcealnerdtreebrackets = 0
+|2,0,1473982146,,"webdeviconsconcealnerdtreebrackets = 0"
+:g:webdeviconsconcealnerdtreebrackets = 0
+|2,0,1473982137,,"g:webdeviconsconcealnerdtreebrackets = 0"
+:g:webdevicons_conceal_nerdtree_brackets = 0
+|2,0,1473982122,,"g:webdevicons_conceal_nerdtree_brackets = 0"
+:let g:webdevicons_conceal_nerdtree_brackets = 0
+|2,0,1473982110,,"let g:webdevicons_conceal_nerdtree_brackets = 0"
+:echo g:webdevicons_conceal_nerdtree_brackets
+|2,0,1473982074,,"echo g:webdevicons_conceal_nerdtree_brackets"
+:PluginInstall
+|2,0,1473959078,,"PluginInstall"
 :w
-|2,0,1473928050,,"w"
+|2,0,1473958929,,"w"
+::echo webdevicons#version()
+|2,0,1473956158,,":echo webdevicons#version()"
+:!vim --version
+|2,0,1473956100,,"!vim --version"
+:BundleInstall
+|2,0,1473954981,,"BundleInstall"
+:so ~/.vimrc
+|2,0,1473954973,,"so ~/.vimrc"
+:'<,'>q
+|2,0,1473954923,,"'<,'>q"
+:q!
+|2,0,1473954899,,"q!"
+:q1
+|2,0,1473949168,,"q1"
+:emmet
+|2,0,1473931229,,"emmet"
+:emment
+|2,0,1473931225,,"emment"
 :88
 |2,0,1473928022,,"88"
-:q
-|2,0,1473926144,,"q"
 :wq!
 |2,0,1473923867,,"wq!"
-:q!
-|2,0,1473923760,,"q!"
 :81
 |2,0,0,,"81"
 :66
@@ -53,12 +86,8 @@ $
 |2,0,0,,"jjjjkjjjjjjkjkjk"
 ::
 |2,0,0,,":"
-:PluginInstall
-|2,0,0,,"PluginInstall"
 :so .vimrc
 |2,0,0,,"so .vimrc"
-:'<,'>q
-|2,0,0,,"'<,'>q"
 :!w
 |2,0,0,,"!w"
 :!wq
@@ -123,10 +152,6 @@ $
 |2,0,0,,"Bookmark ~"
 :Bookmark
 |2,0,0,,"Bookmark"
-:q1
-|2,0,0,,"q1"
-:so ~/.vimrc
-|2,0,0,,"so ~/.vimrc"
 : so ~/.vimrc
 |2,0,0,," so ~/.vimrc"
 : so ~/.vim
@@ -137,8 +162,6 @@ $
 |2,0,0,,"color slime"
 :color slime-contrast
 |2,0,0,,"color slime-contrast"
-:BundleInstall
-|2,0,0,,"BundleInstall"
 :color setiui
 |2,0,0,,"color setiui"
 :color seti-ui
@@ -299,14 +322,44 @@ $
 |2,0,0,,"has('lua')"
 
 # Search String History (newest to oldest):
+? webdeviconsconcealnerdtreebrackets = 0
+|2,1,1473982137,,"webdeviconsconcealnerdtreebrackets = 0"
+? webdevicons_conceal_nerdtree_brackets = 0
+|2,1,1473982122,,"webdevicons_conceal_nerdtree_brackets = 0"
+?/.vimrc.bundles.l
+|2,1,1473961517,47,".vimrc.bundles.l"
+?/vimrc.bund
+|2,1,1473961493,47,"vimrc.bund"
+?/[
+|2,1,1473961434,47,"["
+?/nerd
+|2,1,1473961330,47,"nerd"
+?/Nerdtree
+|2,1,1473961325,47,"Nerdtree"
+?/.vimr
+|2,1,1473961132,47,".vimr"
+?/.vimrc
+|2,1,1473961005,47,".vimrc"
+?/WebDevIconsUnicodeDecorateFolderNodes
+|2,1,1473960690,47,"WebDevIconsUnicodeDecorateFolderNodes"
+?/g:WebDevIconsUnicodeDecorateFolderNodes
+|2,1,1473960680,47,"g:WebDevIconsUnicodeDecorateFolderNodes"
+?/.vimrc.bund
+|2,1,1473960348,47,".vimrc.bund"
 ?/vimrc
-|2,1,1473926056,47,"vimrc"
+|2,1,1473958999,47,"vimrc"
+?/.dev
+|2,1,1473955101,47,".dev"
+?/Doc
+|2,1,1473953514,47,"Doc"
+? \$\(cursor\|select\)\$
+|2,1,1473948834,,"\\$\\(cursor\\|select\\)\\$"
+?/.vimrc.bun
+|2,1,1473945213,47,".vimrc.bun"
 ?/vim
 |2,1,1473925630,47,"vim"
 ?/vimrc.l
 |2,1,1473924056,47,"vimrc.l"
-?/.vimrc
-|2,1,1473923923,47,".vimrc"
 ?/colo
 |2,1,1473923805,47,"colo"
 ?/RE
@@ -369,10 +422,6 @@ $
 |2,1,0,47,".vimrc.loca"
 ?/.
 |2,1,0,47,"."
-?/.vimrc.bund
-|2,1,0,47,".vimrc.bund"
-?/.vimrc.bundles.l
-|2,1,0,47,".vimrc.bundles.l"
 ?/.vimrc.local
 |2,1,0,47,".vimrc.local"
 ?/md
@@ -473,6 +522,14 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@/Users/lumpychen/Documents/Repo/devicons-master/new.html
+|2,3,1473948513,,"/Users/lumpychen/Documents/Repo/devicons-master/new.html"
+@/Users/lumpychen/Documents/Demo/
+|2,3,1473947945,,"/Users/lumpychen/Documents/Demo/"
+@/Users/lumpychen/Documents/new.html
+|2,3,1473946897,,"/Users/lumpychen/Documents/new.html"
+@/Users/lumpychen/Documents/Demo/new.html
+|2,3,1473931157,,"/Users/lumpychen/Documents/Demo/new.html"
 @/Users/Lumpychen/Documents/DEMO/weibo/index.html
 |2,3,0,,"/Users/Lumpychen/Documents/DEMO/weibo/index.html"
 @/Users/Lumpychen/Documents/DEMO/weibo/
@@ -510,36 +567,52 @@ $
 
 # Registers:
 "0	LINE	0
-	
-|3,0,0,1,1,0,0,""
-"1	LINE	0
-	
-|3,0,1,1,1,0,1473928046,""
+	" vim-devicon begins
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+	let g:DevIconsEnableFoldersOpenClose = 1
+	let g:webdevicons_conceal_nerdtree_brackets = 1
+	let g:webdevicons_enable_nerdtree = 1
+	" vim-devicon ends
+|3,0,0,1,9,0,1473982711,"\" vim-devicon begins","if exists('g:loaded_webdevicons')","  call webdevicons#refresh()","endif","let g:WebDevIconsUnicodeDecorateFolderNodes = 1","let g:DevIconsEnableFoldersOpenClose = 1","let g:webdevicons_conceal_nerdtree_brackets = 1","let g:webdevicons_enable_nerdtree = 1","\" vim-devicon ends"
+""1	LINE	0
+	" vim-devicon begins
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+	let g:DevIconsEnableFoldersOpenClose = 1
+	let g:webdevicons_conceal_nerdtree_brackets = 1
+	let g:webdevicons_enable_nerdtree = 1
+	" vim-devicon ends
+|3,1,1,1,9,0,1473982714,"\" vim-devicon begins","if exists('g:loaded_webdevicons')","  call webdevicons#refresh()","endif","let g:WebDevIconsUnicodeDecorateFolderNodes = 1","let g:DevIconsEnableFoldersOpenClose = 1","let g:webdevicons_conceal_nerdtree_brackets = 1","let g:webdevicons_enable_nerdtree = 1","\" vim-devicon ends"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1473928046,""
+	let g:DevIconsEnableFolderExtensionPatternMatching = 1
+|3,0,2,1,1,0,1473961541,"let g:DevIconsEnableFolderExtensionPatternMatching = 1"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1473928039,""
+	let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = '1'
+|3,0,3,1,1,0,1473960367,"let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = '1'"
 "4	LINE	0
-	To import preferences, you need to open Alfred preferences, set sync folder in advanced tab and click click "Set folder and restart Alfred".
-	
-|3,0,4,1,2,0,1473928009,"To import preferences, you need to open Alfred preferences, set sync folder in advanced tab and click click \"Set folder and restart Alfred\".",""
+	let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+|3,0,4,1,1,0,1473960027,"let g:WebDevIconsUnicodeDecorateFolderNodes = 1"
 "5	LINE	0
-	  syntax on
-|3,0,5,1,1,0,1473923909,"  syntax on"
+	Plugin 'Xuyuanp/nerdtree-git-plugin'
+|3,0,5,1,1,0,1473959035,"Plugin 'Xuyuanp/nerdtree-git-plugin'"
 "6	LINE	0
-	
-|3,0,6,1,1,0,0,""
+	let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+|3,0,6,1,1,0,1473957956,"let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '"
 "7	LINE	0
-	
-|3,0,7,1,1,0,0,""
+	let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+	let g:DevIconsEnableFoldersOpenClose = 1
+|3,0,7,1,2,0,1473956827,"let g:WebDevIconsUnicodeDecorateFolderNodes = 1","let g:DevIconsEnableFoldersOpenClose = 1"
 "8	LINE	0
-	
-|3,0,8,1,1,0,0,""
+	let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
+|3,0,8,1,1,0,1473955861,"let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''"
 "9	LINE	0
-	
-|3,0,9,1,1,0,0,""
+	" vim-devicon begins
+|3,0,9,1,1,0,1473955283,"\" vim-devicon begins"
 "i	CHAR	0
 	y
 |3,0,18,0,1,0,0,"y"
@@ -549,243 +622,450 @@ $
 "u	CHAR	0
 	uukkkkkkkkkkkjjjkjouukouukjjlo:uukjjddkkkkkkkk
 |3,0,30,0,1,0,0,"uukkkkkkkkkkkjjjkjouukouukjjlo:uukjjddkkkkkkkk"
-""-	CHAR	0
-	vundl
-|3,1,36,0,1,0,1473928928,"vundl"
+"-	CHAR	0
+	=
+|3,0,36,0,1,0,1473961165,"="
 
 # File marks:
 'M  62  0  ~/Documents/Project/LumpyChen.github.io/_posts/2016-07-21-practical-vim.md
 |4,77,62,0,0,"~/Documents/Project/LumpyChen.github.io/_posts/2016-07-21-practical-vim.md"
 'N  11  15  ~/Documents/Repository/colour-schemes/vim/colors/slime-contrast.vim
 |4,78,11,15,0,"~/Documents/Repository/colour-schemes/vim/colors/slime-contrast.vim"
-'0  104  48  ~/Documents/Conf-mac/README.md
-|4,48,104,48,1473929086,"~/Documents/Conf-mac/README.md"
-'1  39  0  ~/NERD_tree_1
-|4,49,39,0,1473926469,"~/NERD_tree_1"
-'2  94  0  ~/Documents/Conf-mac/README.md
-|4,50,94,0,1473926196,"~/Documents/Conf-mac/README.md"
-'3  91  0  ~/Documents/Conf-mac/README.md
-|4,51,91,0,1473926196,"~/Documents/Conf-mac/README.md"
-'4  43  0  ~/NERD_tree_1
-|4,52,43,0,1473926144,"~/NERD_tree_1"
-'5  42  0  ~/NERD_tree_1
-|4,53,42,0,1473926101,"~/NERD_tree_1"
-'6  43  0  ~/NERD_tree_1
-|4,54,43,0,1473926101,"~/NERD_tree_1"
-'7  16  20  ~/.vimrc.local
-|4,55,16,20,1473926065,"~/.vimrc.local"
-'8  37  0  ~/NERD_tree_1
-|4,56,37,0,1473925678,"~/NERD_tree_1"
-'9  38  0  ~/NERD_tree_1
-|4,57,38,0,1473925678,"~/NERD_tree_1"
+'0  101  0  ~/.vimrc.bundles.local
+|4,48,101,0,1473982870,"~/.vimrc.bundles.local"
+'1  1  0  ~/Documents/NERD_tree_1
+|4,49,1,0,1473982762,"~/Documents/NERD_tree_1"
+'2  1  0  ~/Documents/NERD_tree_1
+|4,50,1,0,1473982757,"~/Documents/NERD_tree_1"
+'3  17  0  ~/.vimrc.bundles.local
+|4,51,17,0,1473982752,"~/.vimrc.bundles.local"
+'4  17  0  ~/.vimrc.bundles.local
+|4,52,17,0,1473982752,"~/.vimrc.bundles.local"
+'5  46  0  ~/NERD_tree_1
+|4,53,46,0,1473982451,"~/NERD_tree_1"
+'6  5  0  ~/Documents/NERD_tree_1
+|4,54,5,0,1473982266,"~/Documents/NERD_tree_1"
+'7  6  0  ~/Documents/NERD_tree_1
+|4,55,6,0,1473982266,"~/Documents/NERD_tree_1"
+'8  6  0  ~/Documents/NERD_tree_1
+|4,56,6,0,1473982266,"~/Documents/NERD_tree_1"
+'9  7  0  ~/Documents/NERD_tree_1
+|4,57,7,0,1473982266,"~/Documents/NERD_tree_1"
 
 # Jumplist (newest first):
--'  104  48  ~/Documents/Conf-mac/README.md
-|4,39,104,48,1473929086,"~/Documents/Conf-mac/README.md"
--'  99  71  ~/Documents/Conf-mac/README.md
-|4,39,99,71,1473928930,"~/Documents/Conf-mac/README.md"
--'  98  0  ~/Documents/Conf-mac/README.md
-|4,39,98,0,1473928447,"~/Documents/Conf-mac/README.md"
--'  91  0  ~/Documents/Conf-mac/README.md
-|4,39,91,0,1473928014,"~/Documents/Conf-mac/README.md"
--'  39  0  ~/NERD_tree_1
-|4,39,39,0,1473926469,"~/NERD_tree_1"
--'  13  0  ~/Documents/Conf-mac/NERD_tree_1
-|4,39,13,0,1473926263,"~/Documents/Conf-mac/NERD_tree_1"
--'  1  0  ~/Documents/Conf-mac/NERD_tree_1
-|4,39,1,0,1473926213,"~/Documents/Conf-mac/NERD_tree_1"
--'  94  0  ~/Documents/Conf-mac/README.md
-|4,39,94,0,1473926196,"~/Documents/Conf-mac/README.md"
--'  91  0  ~/Documents/Conf-mac/README.md
-|4,39,91,0,1473926196,"~/Documents/Conf-mac/README.md"
--'  35  7  ~/Documents/Conf-mac/README.md
-|4,39,35,7,1473926183,"~/Documents/Conf-mac/README.md"
--'  35  7  ~/Documents/Conf-mac/README.md
-|4,39,35,7,1473926183,"~/Documents/Conf-mac/README.md"
--'  12  0  ~/Documents/Conf-mac/NERD_tree_1
-|4,39,12,0,1473926169,"~/Documents/Conf-mac/NERD_tree_1"
--'  13  0  ~/Documents/Conf-mac/NERD_tree_1
-|4,39,13,0,1473926169,"~/Documents/Conf-mac/NERD_tree_1"
--'  1  0  ~/Documents/Conf-mac/NERD_tree_1
-|4,39,1,0,1473926164,"~/Documents/Conf-mac/NERD_tree_1"
--'  43  0  ~/NERD_tree_1
-|4,39,43,0,1473926144,"~/NERD_tree_1"
--'  43  0  ~/NERD_tree_1
-|4,39,43,0,1473926144,"~/NERD_tree_1"
--'  43  0  ~/NERD_tree_1
-|4,39,43,0,1473926144,"~/NERD_tree_1"
--'  43  0  ~/NERD_tree_1
-|4,39,43,0,1473926144,"~/NERD_tree_1"
+-'  101  0  ~/.vimrc.bundles.local
+|4,39,101,0,1473982870,"~/.vimrc.bundles.local"
+-'  17  0  ~/.vimrc.bundles.local
+|4,39,17,0,1473982770,"~/.vimrc.bundles.local"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982762,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982762,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982760,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982760,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982757,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982757,"~/Documents/NERD_tree_1"
+-'  13  2  ~/Documents/NERD_tree_1
+|4,39,13,2,1473982755,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982755,"~/Documents/NERD_tree_1"
+-'  13  2  ~/Documents/NERD_tree_1
+|4,39,13,2,1473982755,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982755,"~/Documents/NERD_tree_1"
+-'  17  0  ~/.vimrc.bundles.local
+|4,39,17,0,1473982752,"~/.vimrc.bundles.local"
+-'  17  0  ~/.vimrc.bundles.local
+|4,39,17,0,1473982752,"~/.vimrc.bundles.local"
+-'  17  0  ~/.vimrc.bundles.local
+|4,39,17,0,1473982752,"~/.vimrc.bundles.local"
+-'  17  0  ~/.vimrc.bundles.local
+|4,39,17,0,1473982752,"~/.vimrc.bundles.local"
+-'  100  0  ~/.vimrc.bundles.local
+|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
+-'  100  0  ~/.vimrc.bundles.local
+|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
+-'  100  0  ~/.vimrc.bundles.local
+|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
+-'  100  0  ~/.vimrc.bundles.local
+|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
+-'  100  0  ~/.vimrc.bundles.local
+|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
+-'  46  0  ~/NERD_tree_1
+|4,39,46,0,1473982451,"~/NERD_tree_1"
 -'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473926138,"~/NERD_tree_1"
+|4,39,1,0,1473982436,"~/NERD_tree_1"
 -'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473926138,"~/NERD_tree_1"
+|4,39,1,0,1473982436,"~/NERD_tree_1"
 -'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473926138,"~/NERD_tree_1"
+|4,39,1,0,1473982436,"~/NERD_tree_1"
 -'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473926138,"~/NERD_tree_1"
--'  42  0  ~/NERD_tree_1
-|4,39,42,0,1473926101,"~/NERD_tree_1"
--'  43  0  ~/NERD_tree_1
-|4,39,43,0,1473926101,"~/NERD_tree_1"
--'  42  0  ~/NERD_tree_1
-|4,39,42,0,1473926101,"~/NERD_tree_1"
--'  43  0  ~/NERD_tree_1
-|4,39,43,0,1473926101,"~/NERD_tree_1"
--'  42  0  ~/NERD_tree_1
-|4,39,42,0,1473926101,"~/NERD_tree_1"
--'  43  0  ~/NERD_tree_1
-|4,39,43,0,1473926101,"~/NERD_tree_1"
--'  42  0  ~/NERD_tree_1
-|4,39,42,0,1473926101,"~/NERD_tree_1"
--'  43  0  ~/NERD_tree_1
-|4,39,43,0,1473926101,"~/NERD_tree_1"
+|4,39,1,0,1473982436,"~/NERD_tree_1"
 -'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473926067,"~/NERD_tree_1"
+|4,39,1,0,1473982436,"~/NERD_tree_1"
 -'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473926067,"~/NERD_tree_1"
+|4,39,1,0,1473982436,"~/NERD_tree_1"
 -'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473926067,"~/NERD_tree_1"
+|4,39,1,0,1473982436,"~/NERD_tree_1"
 -'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473926067,"~/NERD_tree_1"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  16  20  ~/.vimrc.local
-|4,39,16,20,1473926065,"~/.vimrc.local"
--'  37  14  ~/NERD_tree_1
-|4,39,37,14,1473926059,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926059,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926059,"~/NERD_tree_1"
--'  39  14  ~/NERD_tree_1
-|4,39,39,14,1473926059,"~/NERD_tree_1"
--'  37  14  ~/NERD_tree_1
-|4,39,37,14,1473926059,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926059,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926059,"~/NERD_tree_1"
--'  39  14  ~/NERD_tree_1
-|4,39,39,14,1473926059,"~/NERD_tree_1"
--'  37  14  ~/NERD_tree_1
-|4,39,37,14,1473926059,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926059,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926059,"~/NERD_tree_1"
--'  39  14  ~/NERD_tree_1
-|4,39,39,14,1473926059,"~/NERD_tree_1"
--'  37  14  ~/NERD_tree_1
-|4,39,37,14,1473926059,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926059,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926059,"~/NERD_tree_1"
--'  39  14  ~/NERD_tree_1
-|4,39,39,14,1473926059,"~/NERD_tree_1"
--'  36  14  ~/NERD_tree_1
-|4,39,36,14,1473926058,"~/NERD_tree_1"
--'  35  63  ~/NERD_tree_1
-|4,39,35,63,1473926058,"~/NERD_tree_1"
--'  34  62  ~/NERD_tree_1
-|4,39,34,62,1473926058,"~/NERD_tree_1"
--'  37  14  ~/NERD_tree_1
-|4,39,37,14,1473926058,"~/NERD_tree_1"
--'  36  63  ~/NERD_tree_1
-|4,39,36,63,1473926058,"~/NERD_tree_1"
--'  35  62  ~/NERD_tree_1
-|4,39,35,62,1473926058,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926058,"~/NERD_tree_1"
--'  37  63  ~/NERD_tree_1
-|4,39,37,63,1473926058,"~/NERD_tree_1"
--'  36  62  ~/NERD_tree_1
-|4,39,36,62,1473926058,"~/NERD_tree_1"
--'  36  14  ~/NERD_tree_1
-|4,39,36,14,1473926058,"~/NERD_tree_1"
--'  35  63  ~/NERD_tree_1
-|4,39,35,63,1473926058,"~/NERD_tree_1"
--'  34  62  ~/NERD_tree_1
-|4,39,34,62,1473926058,"~/NERD_tree_1"
--'  37  14  ~/NERD_tree_1
-|4,39,37,14,1473926058,"~/NERD_tree_1"
--'  36  63  ~/NERD_tree_1
-|4,39,36,63,1473926058,"~/NERD_tree_1"
--'  35  62  ~/NERD_tree_1
-|4,39,35,62,1473926058,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926058,"~/NERD_tree_1"
--'  37  63  ~/NERD_tree_1
-|4,39,37,63,1473926058,"~/NERD_tree_1"
--'  36  62  ~/NERD_tree_1
-|4,39,36,62,1473926058,"~/NERD_tree_1"
--'  36  14  ~/NERD_tree_1
-|4,39,36,14,1473926058,"~/NERD_tree_1"
--'  35  63  ~/NERD_tree_1
-|4,39,35,63,1473926058,"~/NERD_tree_1"
--'  34  62  ~/NERD_tree_1
-|4,39,34,62,1473926058,"~/NERD_tree_1"
--'  37  14  ~/NERD_tree_1
-|4,39,37,14,1473926058,"~/NERD_tree_1"
--'  36  63  ~/NERD_tree_1
-|4,39,36,63,1473926058,"~/NERD_tree_1"
--'  35  62  ~/NERD_tree_1
-|4,39,35,62,1473926058,"~/NERD_tree_1"
--'  38  14  ~/NERD_tree_1
-|4,39,38,14,1473926058,"~/NERD_tree_1"
--'  37  63  ~/NERD_tree_1
-|4,39,37,63,1473926058,"~/NERD_tree_1"
--'  36  62  ~/NERD_tree_1
-|4,39,36,62,1473926058,"~/NERD_tree_1"
--'  36  14  ~/NERD_tree_1
-|4,39,36,14,1473926058,"~/NERD_tree_1"
--'  35  63  ~/NERD_tree_1
-|4,39,35,63,1473926058,"~/NERD_tree_1"
--'  34  62  ~/NERD_tree_1
-|4,39,34,62,1473926058,"~/NERD_tree_1"
--'  37  14  ~/NERD_tree_1
-|4,39,37,14,1473926058,"~/NERD_tree_1"
--'  36  63  ~/NERD_tree_1
-|4,39,36,63,1473926058,"~/NERD_tree_1"
--'  35  62  ~/NERD_tree_1
-|4,39,35,62,1473926058,"~/NERD_tree_1"
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1473982436,"~/NERD_tree_1"
+-'  5  0  ~/Documents/NERD_tree_1
+|4,39,5,0,1473982266,"~/Documents/NERD_tree_1"
+-'  6  0  ~/Documents/NERD_tree_1
+|4,39,6,0,1473982266,"~/Documents/NERD_tree_1"
+-'  6  0  ~/Documents/NERD_tree_1
+|4,39,6,0,1473982266,"~/Documents/NERD_tree_1"
+-'  7  0  ~/Documents/NERD_tree_1
+|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
+-'  7  0  ~/Documents/NERD_tree_1
+|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
+-'  7  0  ~/Documents/NERD_tree_1
+|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
+-'  7  0  ~/Documents/NERD_tree_1
+|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
+-'  5  0  ~/Documents/NERD_tree_1
+|4,39,5,0,1473982266,"~/Documents/NERD_tree_1"
+-'  6  0  ~/Documents/NERD_tree_1
+|4,39,6,0,1473982266,"~/Documents/NERD_tree_1"
+-'  6  0  ~/Documents/NERD_tree_1
+|4,39,6,0,1473982266,"~/Documents/NERD_tree_1"
+-'  7  0  ~/Documents/NERD_tree_1
+|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
+-'  7  0  ~/Documents/NERD_tree_1
+|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
+-'  7  0  ~/Documents/NERD_tree_1
+|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
+-'  7  0  ~/Documents/NERD_tree_1
+|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
+-'  12  2  ~/Documents/NERD_tree_1
+|4,39,12,2,1473982064,"~/Documents/NERD_tree_1"
+-'  13  2  ~/Documents/NERD_tree_1
+|4,39,13,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
+-'  12  2  ~/Documents/NERD_tree_1
+|4,39,12,2,1473982064,"~/Documents/NERD_tree_1"
+-'  13  2  ~/Documents/NERD_tree_1
+|4,39,13,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
+-'  1  0  ~/Documents/NERD_tree_1
+|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
+-'  11  2  ~/Documents/NERD_tree_1
+|4,39,11,2,1473981988,"~/Documents/NERD_tree_1"
+-'  12  2  ~/Documents/NERD_tree_1
+|4,39,12,2,1473981988,"~/Documents/NERD_tree_1"
+-'  13  2  ~/Documents/NERD_tree_1
+|4,39,13,2,1473981988,"~/Documents/NERD_tree_1"
+-'  14  2  ~/Documents/NERD_tree_1
+|4,39,14,2,1473981988,"~/Documents/NERD_tree_1"
+-'  13  2  ~/Documents/NERD_tree_1
+|4,39,13,2,1473981988,"~/Documents/NERD_tree_1"
 
 # History of marks within files (newest to oldest):
 
+> ~/.vimrc.bundles.local
+	*	1473982869	0
+	"	101	0
+	^	17	0
+	.	16	18
+	+	1	18
+	+	1	20
+	+	1	21
+	+	1	0
+	+	93	21
+	+	93	0
+	+	90	0
+	+	93	7
+	+	3	0
+	+	7	0
+	+	93	0
+	+	93	6
+	+	93	28
+	+	93	0
+	+	90	0
+	+	93	0
+	+	93	19
+	+	98	2
+	+	97	90
+	+	94	0
+	+	97	52
+	+	98	0
+	+	95	38
+	+	98	36
+	+	93	0
+	+	93	39
+	+	93	0
+	+	90	21
+	+	91	37
+	+	94	0
+	+	93	32
+	+	27	27
+	+	91	42
+	+	93	0
+	+	97	2
+	+	87	0
+	+	80	0
+	+	75	0
+	+	100	20
+	+	102	24
+	+	100	26
+	+	102	25
+	+	102	36
+	+	88	0
+	+	102	16
+	+	97	0
+	+	102	0
+	+	101	30
+	+	100	0
+	+	101	40
+	+	80	0
+	+	53	0
+	+	52	24
+	+	52	21
+	+	59	21
+	+	58	21
+	+	57	21
+	+	60	21
+	+	56	21
+	+	53	21
+	+	55	21
+	+	54	21
+	+	52	24
+	+	53	24
+	+	54	24
+	+	55	24
+	+	56	24
+	+	57	24
+	+	58	24
+	+	59	24
+	+	60	24
+	+	98	25
+	+	100	0
+	+	100	39
+	+	100	1
+	+	100	0
+	+	100	18
+	+	100	17
+	+	100	20
+	+	100	0
+	+	100	47
+	+	100	0
+	+	100	5
+	+	100	39
+	+	100	0
+	+	100	54
+	+	100	0
+	+	100	47
+	+	100	5
+	+	100	0
+	+	7	0
+	+	8	0
+	+	16	18
+
+> ~/Documents/NERD_tree_1
+	*	1473982760	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_1
+	*	1473982448	0
+	"	46	0
+	.	1	0
+	+	1	0
+
+> ~/.vimrc.bundles
+	*	1473961498	0
+	"	223	0
+	.	101	0
+	+	73	0
+	+	74	0
+	+	258	0
+	+	101	0
+	m	243	0
+	n	243	0
+
+> ~/.vim/bundle/vim-devicons/plugin/webdevicons.vim
+	*	1473961450	0
+	"	344	70
+
+> ~/.vim/bundle/vim-devicons/plugin/NERD_tree_2
+	*	1473961388	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/bundle/vim-devicons/NERD_tree_1
+	*	1473961192	0
+	"	12	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/bundle/vim-devicons/nerdtree_plugin/webdevicons.vim
+	*	1473961073	0
+	"	1	0
+
+> ~/Documents/Conf-mac/NERD_tree_1
+	*	1473960349	0
+	"	41	11
+	.	1	0
+	+	1	0
+
+> ~/.vim/.vimrc.plugins.local
+	*	1473959984	0
+	"	1	0
+	.	1	0
+	+	1	24
+	+	1	32
+	+	1	28
+	+	1	5
+	+	1	34
+	+	1	36
+	+	2	0
+	+	2	31
+	+	2	0
+	+	2	31
+	+	3	53
+	+	3	49
+	+	3	0
+	+	3	53
+	+	3	0
+	+	3	20
+	+	3	8
+	+	3	0
+	+	2	16
+	+	3	0
+	+	2	54
+	+	3	48
+	+	4	0
+	+	2	0
+	+	1	36
+	+	1	0
+	+	2	0
+	+	1	0
+
+> ~/.vim/NERD_tree_1
+	*	1473959981	0
+	"	9	0
+	.	1	0
+	+	1	0
+
+> ~/.vimrc
+	*	1473959092	0
+	"	178	0
+	^	185	28
+	.	185	0
+	+	221	0
+	+	220	0
+	+	84	0
+	+	247	0
+	+	239	4
+	+	240	0
+	+	185	0
+	m	266	37
+
+> ~/Documents/Conf-mac/.gitignore
+	*	1473958929	0
+	"	1	0
+
 > ~/Documents/Conf-mac/README.md
-	*	1473929085	0
-	"	104	48
-	^	104	49
-	.	105	0
+	*	1473958839	0
+	"	95	53
+	^	95	54
+	.	95	53
 	+	3	43
 	+	4	50
 	+	11	48
@@ -855,20 +1135,14 @@ $
 	+	99	46
 	+	100	13
 	+	105	0
+	+	95	53
 	n	9	12
 
-> ~/Documents/Conf-mac/NERD_tree_1
-	*	1473926262	0
-	"	13	0
-	.	1	0
-	+	1	0
-
 > ~/.vimrc.local
-	*	1473926064	0
-	"	16	20
-	^	16	21
-	.	16	20
-	+	1	20
+	*	1473958634	0
+	"	4	0
+	^	17	14
+	.	17	13
 	+	3	11
 	+	3	7
 	+	3	0
@@ -967,190 +1241,129 @@ $
 	+	9	0
 	+	15	10
 	+	15	22
-	+	16	20
+	+	16	21
+	+	17	13
 
-> ~/NERD_tree_1
-	*	1473925766	0
-	"	39	0
+> ~/NERD_tree_2
+	*	1473957857	0
+	"	17	0
 	.	1	0
 	+	1	0
 
-> ~/.vimrc
-	*	1473923878	0
-	"	185	23
-	^	185	28
-	.	185	0
-	+	221	0
-	+	220	0
-	+	84	0
-	+	247	0
-	+	239	4
-	+	240	0
-	+	185	0
-	m	266	37
-
-> ~/.vimrc.bundles.local
-	*	1473923522	0
-	"	91	0
-	^	91	41
-	.	70	0
-	+	1	14
-	+	1	0
-	+	1	14
-	+	1	0
-	+	1	15
-	+	1	0
-	+	1	17
-	+	1	0
-	+	1	37
-	+	1	108
-	+	1	73
-	+	1	29
-	+	1	7
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	7
-	+	1	0
-	+	1	7
-	+	1	6
-	+	1	3
-	+	1	4
+> ~/Documents/new.html
+	*	1473952329	0
+	"	9	49
+	^	9	50
+	.	9	49
+	+	2	0
 	+	1	5
-	+	1	0
-	+	1	32
-	+	1	21
-	+	1	5
-	+	1	25
-	+	1	27
-	+	1	21
-	+	1	5
-	+	1	0
-	+	1	28
-	+	1	25
-	+	1	0
-	+	1	76
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	50
-	+	1	37
-	+	1	33
-	+	1	7
-	+	1	36
-	+	1	17
-	+	1	0
-	+	1	14
-	+	1	0
+	+	2	0
 	+	1	4
-	+	1	18
-	+	1	20
-	+	1	21
-	+	1	0
-	+	83	21
-	+	83	0
-	+	80	0
-	+	83	7
-	+	3	0
+	+	4	0
+	+	5	14
+	+	17	0
+	+	16	28
+	+	18	0
+	+	16	61
+	+	11	0
+	+	9	6
+	+	11	0
+	+	9	6
+	+	11	0
+	+	16	32
 	+	7	0
-	+	83	0
-	+	83	6
-	+	83	28
-	+	83	0
-	+	80	0
-	+	83	0
-	+	83	19
-	+	88	2
-	+	87	90
-	+	84	0
-	+	87	52
-	+	88	0
-	+	85	38
-	+	88	36
-	+	83	0
-	+	83	39
-	+	83	0
-	+	80	21
-	+	81	37
-	+	84	0
-	+	83	32
-	+	17	27
-	+	81	42
-	+	83	0
-	+	87	2
-	+	77	0
-	+	70	0
-	+	65	0
-	+	90	20
-	+	92	24
-	+	90	26
-	+	92	25
-	+	92	36
-	+	78	0
-	+	92	16
-	+	87	0
-	+	92	0
-	+	91	30
-	+	90	0
-	+	91	40
-	+	70	0
+	+	14	0
+	+	6	5
+	+	13	8
+	+	11	0
+	+	9	87
+	+	16	48
+	+	8	17
+	+	16	28
+	+	10	22
+	+	12	24
+	+	16	55
+	+	9	49
+
+> ~/Documents/NERD_tree_2
+	*	1473951659	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Repo/devicons-master/new.html
+	*	1473949162	0
+	"	9	24
+	^	9	31
+	.	9	0
+	+	4	0
+	+	6	13
+	+	9	4
+	+	4	71
+	+	5	0
+	+	9	0
+	+	9	35
+	+	10	0
+	+	11	0
+	+	9	0
+
+> ~/Documents/Repo/devicons-master/NERD_tree_2
+	*	1473948981	0
+	"	41	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Repo/NERD_tree_1
+	*	1473948524	0
+	"	16	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Project/NERD_tree_1
+	*	1473945131	0
+	"	25	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Demo/new.html
+	*	1473931409	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Demo/NERD_tree_1
+	*	1473931406	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Repo/nerd-fonts/NERD_tree_1
+	*	1473931028	0
+	"	20	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Repo/nerd-fonts/install.sh
+	*	1473930187	0
+	"	23	0
 
 > ~/Documents/Conf-mac/.git/COMMIT_EDITMSG
-	*	1473921196	0
-	"	1	21
-	^	1	22
-	.	1	21
+	*	1473929753	0
+	"	1	13
+	^	1	14
+	.	1	13
 	+	1	22
 	+	13	0
 	+	2	0
-	+	1	21
+	+	1	13
 
 > ~/Documents/Conf-mac/.vimrc
 	*	1473908884	0
 	"	1	0
 
-> ~/Documents/Repo/nerd-fonts/NERD_tree_1
-	*	1473908658	0
-	"	14	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/.vimrc.plugins.local
-	*	1473846627	0
-	"	3	0
-	.	4	0
-	+	1	24
-	+	1	32
-	+	1	28
-	+	1	5
-	+	1	34
-	+	1	36
-	+	2	0
-	+	2	31
-	+	2	0
-	+	2	31
-	+	4	53
-	+	4	49
-	+	4	0
-	+	4	53
-	+	4	0
-	+	4	20
-	+	4	8
-	+	4	0
-	+	2	16
-	+	4	0
-	+	3	54
-	+	4	0
-
 > ~/.vim/bundle/slime-contrast.vim/slime-contrast.vim
 	*	1473843974	0
 	"	101	0
-
-> ~/.vim/NERD_tree_1
-	*	1473843931	0
-	"	36	4
-	.	1	0
-	+	1	0
 
 > ~/new.log
 	*	1473843563	0
@@ -1163,12 +1376,6 @@ $
 > ~/Documents/DEMO/weibo/index.html
 	*	1473415221	0
 	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/DEMO/NERD_tree_1
-	*	1473415197	0
-	"	10	4
 	.	1	0
 	+	1	0
 
@@ -1341,12 +1548,6 @@ $
 	+	9	0
 	+	12	7
 	+	14	3
-
-> ~/NERD_tree_2
-	*	1473322451	0
-	"	48	0
-	.	1	0
-	+	1	0
 
 > ~/Documents/Project/LumpyChen.github.io/_posts/2016-03-04-second-tough-javascript.md
 	*	1473266706	0
@@ -1587,17 +1788,6 @@ $
 > /usr/local/share/vim/vim74/doc/help.txt
 	*	1473131948	0
 	"	10	30
-
-> ~/.vimrc.bundles
-	*	1473080358	0
-	"	300	0
-	.	101	0
-	+	73	0
-	+	74	0
-	+	258	0
-	+	101	0
-	m	243	0
-	n	243	0
 
 > ~/Documents/Project/LumpyChen.github.io/_posts/2016-02-17-welcome-to-jekyll.md
 	*	1473076412	0
@@ -1864,81 +2054,3 @@ $
 	+	14	14
 	+	15	1
 	+	9	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/2016-03-30-js-module.md
-	*	1472907521	0
-	"	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/NERD_tree_1
-	*	1472895728	0
-	"	38	0
-	.	1	0
-	+	1	0
-
-> /usr/local/share/vim/vim74/doc/options.txt
-	*	1472892270	0
-	"	7013	23
-
-> /usr/local/share/vim/vim74/doc/motion.txt
-	*	1472892262	0
-	"	1318	37
-
-> ~/Documents/Project/响应式网站模板 cv/NERD_tree_1
-	*	1472889601	0
-	"	10	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/2016-09-02-Cvim.md
-	*	1472875259	0
-	"	2	0
-	^	2	0
-	.	3	0
-	+	3	0
-
-> /Applications/ShadowsocksX.app/Contents/Resources/shadowsocks_sysconf
-	*	1472826136	0
-	"	1	0
-	^	1	0
-
-> /Applications/ShadowsocksX.app/Contents/Resources/proxy.pac.gz
-	*	1472825585	0
-	"	65	0
-	.	4551	0
-	+	4551	0
-
-> ~/.ShadowsocksX/gfwlist.js
-	*	1472825342	0
-	"	1863	5
-
-> ~/Documents/6d.mp
-	*	1472807353	0
-	"	1	0
-
-> ~/Documents/1.md
-	*	1472807185	0
-	"	8	2
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/2016-08-31-System.md
-	*	1472780438	0
-	"	14	12
-	.	24	0
-	+	2	0
-	+	20	0
-	+	23	44
-	+	24	0
-	+	23	19
-	+	22	9
-	+	21	3
-	+	24	0
-
-> ~/Documents/Project/LumpyChen.github.io/index.md
-	*	1472602977	0
-	"	41	0
-
-> ~/Documents/DEMO/MEE2016/.git/COMMIT_EDITMSG
-	*	1472547792	0
-	"	1	19
-	^	1	20
-	.	1	19
-	+	1	19

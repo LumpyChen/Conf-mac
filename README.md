@@ -92,7 +92,7 @@ set sync folder in advanced tab and click click "Set folder and restart Alfred".
 
 ## Vim
 
-I adapt [Spf13-vim]() as my packages library,
+I adapt [Spf13-vim](https://github.com/spf13/spf13-vim) as my packages library,
 which contains a lot of plugins.
 
 Somehow there has been bugs with my local setting,

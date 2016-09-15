@@ -1,4 +1,3 @@
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
 Bundle "daylerees/colour-schemes", { "rtp": "vim/"  }
 Bundle 'tiagofumo/vim-nerdtree-syntax-highlight'

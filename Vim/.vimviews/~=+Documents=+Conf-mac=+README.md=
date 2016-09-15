@@ -14,12 +14,12 @@ inoremap <buffer> <silent> ' =AutoPairsInsert('''')
 inoremap <buffer> <silent> ( =AutoPairsInsert('(')
 inoremap <buffer> <silent> ) =AutoPairsInsert(')')
 inoremap <buffer> <silent> < <><Left>
-nnoremap <buffer> <silent> î :call AutoPairsJump()
-xnoremap <buffer> <silent> î :call AutoPairsJump()
-onoremap <buffer> <silent> î :call AutoPairsJump()
-nnoremap <buffer> <silent> ð :call AutoPairsToggle()
-xnoremap <buffer> <silent> ð :call AutoPairsToggle()
 onoremap <buffer> <silent> ð :call AutoPairsToggle()
+xnoremap <buffer> <silent> ð :call AutoPairsToggle()
+nnoremap <buffer> <silent> ð :call AutoPairsToggle()
+onoremap <buffer> <silent> î :call AutoPairsJump()
+xnoremap <buffer> <silent> î :call AutoPairsJump()
+nnoremap <buffer> <silent> î :call AutoPairsJump()
 snoremap <buffer> <silent> î :call AutoPairsJump()
 snoremap <buffer> <silent> ð :call AutoPairsToggle()
 inoremap <buffer> <silent> [ =AutoPairsInsert('[')
@@ -137,12 +137,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 104 - ((20 * winheight(0) + 11) / 23)
+let s:l = 95 - ((11 * winheight(0) + 11) / 23)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-104
-normal! 049|
+95
+normal! 054|
 lcd ~/Documents/Conf-mac
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

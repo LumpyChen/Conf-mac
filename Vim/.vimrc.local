@@ -14,3 +14,4 @@
 
   color Tomorrow-Night
   set background=dark
+  set shell=sh

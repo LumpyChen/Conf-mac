@@ -2,13 +2,18 @@
 source ~/.vim/.vimrc.plugins.local
 
 " undotree begins
-if has("persistent_undo")
-    set undodir=~/.undodir/
-    set undofile
-endif
-
 map <C-u> :UndotreeToggle<cr>
 " undotree ends
+
+" vim-devicon begins
+if exists('g:loaded_webdevicons')
+  call webdevicons#refresh()
+endif
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:webdevicons_conceal_nerdtree_brackets = 1
+let g:webdevicons_enable_nerdtree = 1
+" vim-devicon ends
 
 " nerdtree begins
 autocmd StdinReadPre * let s:std_in=1
@@ -44,15 +49,15 @@ endfunction
 
 " nerdtree git plugin begins
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "=",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
+    \ "Modified"  : " ",
+    \ "Staged"    : " ",
+    \ "Untracked" : " ",
+    \ "Renamed"   : " ",
+    \ "Unmerged"  : " ",
+    \ "Deleted"   : " ",
+    \ "Dirty"     : " ",
+    \ "Clean"     : " ",
+    \ "Unknown"   : " "
     \}
 " nerdtree git plugin ends
 
@@ -89,4 +94,8 @@ let g:NERDTreeExtensionHighlightColor['md'] = "CC6666"
 
 " easymotion setting begins
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_underbar_completion = 1
 " easymotion setting ends
+
+
+
