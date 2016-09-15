@@ -1,0 +1,272 @@
+---
+layout: page
+title:  "Js难点3：原型和继承"
+date:   2016-03-04 20:07:07
+category:   develop
+class:  toughjs
+tags:   
+    -  javascript
+---
+
+
+# 原型与继承
+
+>`面向对象`的语言都有`类`的特性
+>`面向对象`的语言一般支持`接口继承`和`实现继承`
+
+## 属性的类型和特性
+
+`ES5`中有两种属性
+
+*   数据属性
+*   访问器属性
+
+### 数据属性
+
+后面跟随的为默认值：
+
+*   [[Configurable]] 属性是否被删除重写或修改特性 true
+*   [[Enumerable]] 是否可以遍历 true
+*   [[Writable]] 值是否可以修改 true 
+*   [[Value]] 值 undefined
+
+```javascript
+var person = {};
+Object.defineProperty(person,'name',{
+    writable:false,
+    value:'Jack'    
+})
+person.name;//Jack
+person.name = 'Jane';
+person.name;//Jack
+```
+
+### 访问器属性
+
+*   [[Configurable]] 属性是否可以修改
+*   [[Enumerable]] 是否可以遍历
+*   [[Get]]读取属性调用的函数
+*   [[Set]]写入属性调用的函数
+
+```javascript
+var book = {_year:2004,edition:1}
+Object.defineProperty(book,"year",{
+    get:function(){
+        this.edition += 1;
+        return this
+    },
+    set:function(newValue){
+            this._year = newValue;
+            this.edition += 1;
+    }
+});
+book.year = 2005;
+book.edition;//2
+book.year;
+book.edition;//3
+```
+
+## 创建对象的模式
+
+### 工厂模式
+
+```javascript
+function createCar(name,color){
+    var car = new Object();
+    car.name = name;
+    car.color = color;
+    return car;
+}
+```
+
+缺点：无法通过`instance of`识别对象的类型。
+
+### 构造函数模式
+
+```javascript
+function Car(name){
+    this.name = name;
+    this.showName = function(){console.log(this.name)};
+}
+```
+
+缺点：每一个实例的方法都要重新定义一个新的对象。
+
+```javascript
+new Car('benz');//obj
+```
+
+上面语句经历了四个步骤：
+
+1. 创建一个新对象
+2. 将构造函数的作用域赋给新对象(改变this指向)
+3. 执行构造函数的代码
+4. 返回新对象
+
+如果没有`new`：
+
+```javascript
+Car('Audi','black');//undefine
+name;//'Audi'
+global.name;//'Audi'
+//只执行了步骤四和三
+```
+
+由于不存在步骤2，构造函数中的`this`指向了`global`。
+
+### 原型模式
+
+```javascript
+function Car(){
+}
+Car.prototype.name = 'BMW';
+Car.prototype.color = 'white';
+// 'prototype'是个对象，也可以用{}来写
+
+var myBMW = new Car();
+
+//in 操作符，只要能访问到就返回true
+//hasOwnProperty 存在在实例中才就返回true
+
+myBMW.hasOwnProperty('name');//false
+'name' in myBMW;//true
+//不存在实例里，但可被访问，代表存在原型中 
+myBMW.name;//'BMW'
+
+Object.keys(Car.prototype);
+//[ 'name', 'color' ]，得到可遍历的
+Object.getOwnPropertyNames(Car);
+//[ 'length', 'name, 'arguments, 'caller', 'prototype' ]
+Object.getOwnPropertyNames(Car.prototype);
+//[ 'constructor', 'name', 'color' ],得到全部
+```
+
+调用属性时，按照从实例到原型链进行搜索，找到相应标识值就将其返回。
+
+## 原型
+
+>每一个函数都有一个原型`prototype`属性，为一个指向一个对象的指针，
+>这个对象包含可以由特定类型的所有实例共享的属性和方法
+
+无论什么时候，新建一个函数，就会为该函数创建一个`prototype`指针属性
+默认情况下，原型对象获得指向相应构造函数的指针属性`constructor`
+
+`Person.prototype.isPrototypeOf(person1)`
+判断是否
+
+`__proto__`: 构造函数为函数实例赋予的指向构造函数原型的指针属性
+
+
+### 重写原型对象
+
+```javascript
+function Car(){
+}
+var Benz = new Car();
+Car.prototype = {
+    name:'benz',
+    constructor:Car,
+    showName:function(){
+        console.log(this.name)
+    }   
+}
+Benz.showName()
+//TypeError: Benz.showName is not a function
+Benz.__proto__
+//Car {}，不能访问到Car.prototype
+//仍然在访问原来的Car.prototype
+Benz.__proto__ = Car.prototype
+Benz.showName();
+//benz
+//PS. 在这种情况下，constructor会被遍历
+```
+
+## 继承
+
+### 原型链
+
+```javascript
+function Mother(){
+    this.motherval = true;
+}
+Mother.prototype.getMotherValue = function(){
+    return this.motherval
+}
+// 定义了Mother及其原型
+
+function Child(){
+    this.childval = false;
+}
+Child.prototype = new Mother();
+// 继承：子类的原型为父类构造函数的实例
+Child.prototype.getChildValue = function(){
+    return this.childval 
+};
+// 定义了child及其原型
+
+var obj = new Child();
+console.log(obj.getMotherValue());
+//true
+console.log(obj.getChildValue());
+//false
+
+Mother.prototype;
+// Mother{ getMotherValue:[Function] }
+// 构造函数的原型为一个对象，名称和其构造函数一样，包含原型中的方法和属性
+Mother.prototype.constructor; 
+// [Function:Mother]
+// 这是Mother的构造函数，constructor被默认指定 
+Child.prototype;
+// Mother { motherval: true, getChildValue: [Function] }
+// 一个新的Mother对象实例
+Child.prototype.constuctor; 
+// undefined
+// 因为我将Child的原型从原来的指向了自己定义的Mother实例
+Child.prototype.__proto__;
+// Mother { getMotherValue: [Function] }
+// Mother实例的指向了Mother的原型
+obj;
+// Mother { childval: false }
+// 为什么是一个新的Mother实例，具有构造函数里设置的属性?
+obj.constructor;
+// [Function: Mother]
+obj.__proto__;
+// Mother { motherval: true, getChildValue: [Function] }
+// 原因是obj的constructor指向了Mother的构造函数
+```
+
+>注意：不要使用`{}`来定义`prototype`，否则会出现重写，`__proto__`没有办法找到原型
+
+我们可以看到：
+```javascript
+obj instanceof Object;
+obj instanceof Child;
+obj instanceof Mother;
+// all true
+```
+
+### Object
+
+>所有引用类型都是`Object`的实例，
+>因此它们的原型都会包含一个内部指针指向`Object.prototype`
+
+```javascript
+Object.getOwnPropertyNames(Object.prototype)
+//[ 'constructor',
+//  'toString',
+//  'toLocaleString',
+//  'valueOf',
+//  'hasOwnProperty',
+//  'isPrototypeOf',
+//  'propertyIsEnumerable',
+//  '__defineGetter__',
+//  '__lookupGetter__',
+//  '__defineSetter__',
+//  '__lookupSetter__',
+//  '__proto__' ]
+```
+
+
+
+
+

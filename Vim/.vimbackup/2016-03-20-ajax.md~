@@ -1,0 +1,291 @@
+---
+layout: page
+title:  Ajax & JSON Intro
+date:   2016-03-28 19:07:05
+category:   develop
+tags:   
+    -  javascript
+    -  English
+---
+
+Before you read this article, you should know about async & synchronize.
+
+>AJAX allows Javascript sends HTTP request and gets response without refresh the webpage.
+
+```javascript
+var request = new XMLHttpRequest();
+```
+
+## Across the domain
+
+`http://www.lumpychen.com:8080/scripts/vue.js`
+
+`http://`:protocol
+`www`:child domain name
+`lumpychen.com`:main domain name
+`8080`:port name
+`script/vue.js`:the address of requested source
+
+>When more than one of `protocol`,`domain name`,`port name` is different,
+>it's different domain.
+>Javascript do not allow to request across domain out of safety.
+>But you can: 
+>
+>*  Use a proxy server from the back end.
+>*  Jsonp can handle the domain-across request.
+>*  XMLHttpRequest level2 can request across domains, set from back end. 
+
+
+### JSONP
+
+```HTML
+<script>
+function jsonp(json){
+    console.log(json["name"])
+}
+</script>
+<script src="http://www.bbb.com/jsonp.js"></script>
+<!-- In www.bbb.com, "jsonp({'name':Lumpy})" -->
+```
+
+```javascript
+//Only available in Get Method.
+//Set mark in the URL.
+jQuery.ajax{
+    type:"GET",
+    url:"service.php?number=" + $("keyword").val(),
+    dataType:"jsonp",
+    jsonp:"callbackLumpy",
+    success:function(data){
+        if(data.sucess){
+            console.log(data.msg);
+        }else{
+            console.log("ERR:"+data.msg);
+        }
+    },
+    error:function(jqXHR){
+        console.log("ERR"+jqXHR.status)
+    }
+}
+```
+
+```php
+ $jsonp = $_GET["callbackLumpy"]
+ $result = $jsonp.'({"success":false,"msg":"Can not find."})'
+```
+
+### XML2
+
+```php
+header("Access-Controll-Allow-Origin:*");
+header("Access-Controll-Allow-Methods:POST,GET")
+```
+
+## HTTP 7 steps:
+
+*   Build TCP.
+*   Web browser sends request to  Web server.
+*   Web browser sends request head message.
+*   Web server responds.
+*   Web server sends response head message. 
+*   Web server send data to Web browser.
+*   Web server shut down TCP.
+
+
+# AJAX
+
+## Request 4 parts:
+
+*   Method:POST/GET
+*   URL:
+*   Head: env,auth...
+*   Body: after the blank of Head,content
+
+### Method
+
+GET: usually get information / send arguments by URL / limit of numbers  information is 2000 / idempotent
+
+POST: usually alter the resourse on the server / no limit
+
+
+## Response 3 parts:
+
+*   Status code: success or failure
+*   Head: type of server / content type
+*   Body: content
+
+### Status code:
+
+*   1: Information: "Have gotten the request, busy on it"
+*   2: Succeed: "OK."
+*   3: Redirect: "You are supposed to do more about it."
+*   4: Error of Client: "You request is wrong."
+*   5: Error of Server: "Can't handle the request."
+
+
+## Resquest of XHR
+
+*   open(method{string},url,whether async{boolean}) 
+*   setRequestHeader(type,content)
+*   send(url{string})
+
+>If you use POST method, you must send a string or it will make no sense.
+
+## Response of XHR
+
+*   responseText: get respond data by string
+*   responseXML: get respond data by XML
+*   status statusText: get HTTP status by number or string
+*   getAllResponseHeader: all header content
+*   getResponseHeader: specific header content
+*   readyState: 
+    *   0 unopened 
+    *   1 start open 
+    *   2 response head received 
+    *   3 response body received
+    *   4 response ready
+*   `onreadystatechange = function` to listen 
+*   responseText
+
+
+## A typical GET
+
+```javascript
+var req = new XMLHttpRequest();
+req.open("GET","get.php?number=1","true");
+req.send();
+req.onreadystatechange = function(){
+    if(req.readyState==4&&req.status==200){
+        //do sth
+        console.log(req.responseText)
+        //content of response
+    }
+}
+```
+
+```
+GET /ajaxdemo/lum.php?number=1
+User-Agent:xxx
+Host: localhost:8080
+
+//without body content
+```
+
+## A typical POST
+
+```javascript
+var req = new XMLHttpRequest();
+var data = "name=" + document.getElementById("name").value + 
+           "&number=" + document.getElementById("number").value;
+
+req.open("POST","get.php","true");
+req.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+req.send(data);
+req.onreadystatechange = function(){
+    if(req.readyState==4){
+        if(req.status==200){
+        //do sth
+        console.log(req.responseText)
+        //content of respons
+        }else{
+            console.log("ERR:"+req.status);
+        }
+    }
+}
+```
+
+```
+POST /ajaxdemo/lum.php
+User-Agent:xxx
+Host: localhost:8080
+Content-Type:application/x-www-form-urlencoded
+
+name=lumpy&number=2
+//with body content
+```
+
+
+# AJAX In JQuery
+
+```javascript
+//Typical GET
+jQuery.ajax{
+    type:"GET",
+    url:"service.php?number=" + $("keyword").val(),
+    dataType:"json",
+    success:function(data){
+        if(data.sucess){
+            console.log(data.msg);
+        }else{
+            console.log("ERR:"+data.msg);
+        }
+    },
+    error:function(jqXHR){
+        console.log("ERR"+jqXHR.status)
+    }
+}
+
+//Typical POST
+jQuery.ajax{
+    //req.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+    //abbr
+    type:"GET",
+    url:"service.php",
+    dataType:"json",
+    data:{
+        name:"jack",
+        number:"string",    
+    },
+    success:function(data){
+        if(data.sucess){
+            console.log(data.msg);
+        }else{
+            console.log("ERR:"+data.msg);
+        }
+    },
+    error:function(jqXHR){
+        console.log("ERR"+jqXHR.status)
+    }
+}
+```
+
+
+# JSON
+
+>Javascript Object Notation
+
+Json is shorter and write-faster than XML.
+Json is able to be handled by Javascript self-built method.
+
+```json
+//value can be number,"string",boolean,{obj},[arr],null
+{
+    "key":"value",//key must be wrapped by ""
+    "key2":1
+}
+
+```
+
+handle JSON
+
+-  eval
+-  JSON.parse()
+
+```javascript
+var jsondata = '{"staff":[{"name":"Lumpy"}]}';
+var jsonObjEval = eval('('+jsondata+')');//not recommended
+var jsonObjParse = JSON.parse(jsondata);//error if not succeed
+console.log(jsonObjEval.staff[0].name)//"Lumpy"
+console.log(jsonObjParse.staff[0].name)//"Lumpy"
+```
+
+Validator:
+
+>jsonlint.com
+
+
+
+
+
+
+

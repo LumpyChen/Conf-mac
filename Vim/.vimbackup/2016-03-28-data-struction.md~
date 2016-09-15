@@ -1,0 +1,254 @@
+---
+layout: page
+title:  "数据结构与算法1"
+date:   2016-03-28 21:07:07
+category:   develop
+class:  data
+tags:   
+    -  javascript
+---
+
+# 数据结构
+
+`ADT`抽象数据类型
+
+## 列表(List)
+
+```javascript
+function List(){
+    this.listSize = 0;
+    this.pos = 0;
+    this.dataStore = [];
+    this.find = function(){
+
+    }
+    this.toString = function(){
+
+    }
+    this.insert = function(){
+
+    }
+    this.
+}
+```
+
+## 栈(Stack)
+
+### 描述
+
+>队尾插入，队首删除，后入先出
+
+### 具体描述
+
+```javascript
+function Stack(){
+    this.datastore = [];
+    this.top = 0;
+    this.push = function(element){
+        this.dataStore[this.top++] = element;    
+    };
+    this.pop = function(){
+        return this.dataStore[--this.top]
+    };
+    this.peek = function(){
+        return this.dataStore[this.top-1]
+    };
+    this.clear = function(){
+        this.top = 0;
+    }
+    this.length = function(){
+        return this.top;
+    }
+}
+```
+
+### 实例
+
+数制转换 —— 取余压入栈，依次弹出
+回文语句的判断
+递归
+
+## 队列(Queue)
+
+### 描述
+
+>队尾插入，队首删除，先进先出
+
+### 具体描述
+
+```javascript
+function Queue(){
+    this.dataStore = [];
+    this.enqueue = function(element){
+        this.dataStore.push(element);
+    }
+    this.dequeue = function(){
+        return this.dataStore.shift();
+    }
+    this.front = function(){
+        return this.dataStore[0];
+    }
+    this.back = function(){
+        return this.dataStore[this.dataStore.length - 1];
+    }
+    this.toString = function(){
+        var reStr = "";
+        for(var i = 0; i < this.dataStore.length;i++){
+            reStr += this.dataStore[i] + "\n";
+        }
+        return reStr;
+    }
+    this.empty = function(){
+        if(this.dataStore.length==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+```
+
+## 链表(LinkedList)
+
+### 描述
+
+>每一个节点都使用一个对象的引用（链）指向它的后继，
+靠相互之间的关系实现引用
+
+### 具体描述
+
+```javascript
+function LinkedList(){
+    
+    function Node(element){
+        this.element = element;
+        this.next = null;
+    }
+
+    this.head = new Node("head");
+    this.insert = function(){};
+    this.remove = function(){};
+    this.display = function(){};
+}
+```
+
+### 实例
+
+循环链表,双向链表(方便从后向前遍历)
+向前向后移动n个节点
+只显示当前节点
+
+## 字典(Dictionary)
+
+### 描述
+
+>`键-值`对形式存储
+
+### 具体描述
+
+```javascript
+function Dictionary(){
+    this.dataStore = new Array();
+    this.add = function(key,value){
+        this.dataStore[key] = value;
+    }
+    this.find = function(key){
+        return this.dataStore[key];
+    }
+    this.remove = function(key){
+        delete this.dataStore[key];
+    }
+    this.showAll = function(){
+        var dataKeys = Array.prototype.slice.call(Object.keys(this.dataStore)).sort();
+        console.log(dataKeys)
+        for(var key in dataKeys){
+            console.log(dataKeys[key] + "->" + this.dataStore[dataKeys[key]])
+        }
+    }
+    this.clear = function(){
+        for(var key in Object.keys(this.dataStore)){
+            delete this.dataStore[key];
+        }
+    }
+}
+```
+
+## 散列(Hash)
+
+散列使用的数据结构叫做`散列表`
+
+通过一个散列函数将`键`映射为`数字`
+
+可能会出现`碰撞(Collision)`，两个键映射成同一个值。
+
+散列使用的数据结构：散列表`Hash Table`
+
+### 具体实现
+
+```javascript
+
+```
+
+
+## 集合(Set)
+
+### 描述
+
+>无序，没有相同元素
+
+### 具体实现
+
+```javascript
+function Set(){
+    this.dataStore = [];
+    this.add = function(data){
+        if(this.dataStore.indexOf(data)<0){
+            this.dataStore.push(data);
+            return true;
+        }else{
+            return false;
+        }
+    }
+    this.remove = function(data){
+        var pos = this.dataStore.indexOf(data);
+        if(pos > -1){
+            this.dataStore.splice(pos,1);
+            return true;
+        }else{
+            return false;
+        }
+    }
+    this.size = function(){
+        return this.dataStore.length;       
+    }
+    this.contains = function(data){
+        if()
+    }
+    this.union = function(){
+
+    }
+    this.intersect = function(){
+        var tempSet = new Set();
+        for(var i = 0;i<this.dataStore.length;++i){
+            if(set.contains(this.dataStore[i])){
+                tempSet.add(this.)
+            }
+        }
+    }
+    this.subset = function(){
+
+    }
+    this.difference = function(){
+
+    }
+    this.show = function(data){
+        return this.dataStore;
+    }
+}
+```
+
+
+
+### 实例
+
+

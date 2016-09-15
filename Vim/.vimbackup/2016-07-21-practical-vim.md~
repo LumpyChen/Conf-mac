@@ -1,0 +1,203 @@
+---
+layout: page
+title:  "使用Vim"
+date:   2016-07-20 19:41:05
+category:   tools
+tags:
+    - CSS
+---
+# 使用VIM
+
+北京今天下了暴雨……自己去深圳实习的航班直接取消了，要晚个5天去公司报道了
+
+希望这雨马上停了吧，省的一个个都被浇成落汤鸡
+
+---
+
+>Have you ever read "Practical Vim" written by Drew Neil?
+
+这是一本很不错的书，有人民邮电出版社的译版，比起其他字典式的教程，里面针对学习`Vim`的思路进行清楚的分析
+
+在这篇文章中，我记录了一些容易被混淆的命令和自己设置的`key mapping`，作为使用手册
+
+我归纳了相似的命令——相似的命令一起记效果往往会更好
+
+我的`vimrc`戳[这里](http://www.baidu.com)
+
+## 概念
+
+### 基本模式
+
+* 普通模式
+* 插入模式
+* 可视模式
+* 命令行模式
+
+### 普通模式
+
+这些命令会保持你在普通模式：
+
+#### 行操作
+
+* $ : 到达行末(行末符)
+* ^ : 到达行首第一个非空字符(插入符)
+* 0或者| : 到达行首(位置0)
+
+* - : 前一行行首
+* + : 后一行行首
+
+* M : 屏幕中间行(Middle)
+
+#### 词操作（单词由字母、数字和下划线组成）
+
+* w : 后一单词词首(word)
+* b : 前一单词词首(back)
+* e : 后一单词词尾(end)
+
+* \# : 上个相同单词词首(hashtag as last)
+* * : 下个相同单词词首(pointer as next)
+
+* f : 行内正向查找(find)
+* F : 行内反向查找
+* t : 行内正向错位查找(till)
+* T : 行内反向错位查找
+* ; : 下一个(semicolon as next sentence)
+* , : 上一个(comma as last sentence)
+
+* N : 跳至搜索结果上一处
+* n : 跳至搜索结果下一处(next)
+
+#### 字符操作
+
+* x 删除光标上字符(kill)
+* X 删除光标前一个字符
+
+* ~ 转换光标上字符大小写(translate)
+
+#### 组合操作
+
+操作符需要后接动作命令
+
+* `d`: 删除(delete)
+* `c`: 修改(change)
+* `y`: 拷贝(copy)
+* `=`: 自动格式化
+* `>`,`<`: 缩进/反缩进
+
+### 插入模式
+
+这些命令会使你从正常模式进入插入/其他输入模式：
+
+* i : 字符前插入(insert)
+* I : 行前插入
+* a : 字符后插入(append)
+* A : 行末插入
+
+* s : 删除字符并插入(substitute)
+* C : 删除字符处文本对象并插入
+* S : 删除行并插入
+
+* R : 替换模式(replace)
+* r : 替换字符
+
+* O : 在前面新起一行
+* o : 在后面新起一行
+
+* P : 在字符前面粘贴(paste)
+* p : 在字符后面粘贴
+
+### 插件
+
+推荐一个博客[CodeRush](http://foocoder.com)，非常多的VIM插件介绍
+
+#### Spf13
+
+[转载一篇文章，来自Henry Fong](https://ifhw.github.io/2016/01/10/vim-spf13/)
+
+我使用了[spf13-vim](https://github.com/spf13/spf13-vim)的插件集合
+
+项目对于Vim的配置文件进行了分离：
+
+1. .vimrc.before
+1. .vimrc.before.fork
+1. .vimrc.before.local
+1. .vimrc.bundles
+1. .vimrc.bundles.fork
+1. .vimrc.bundles.local
+1. .vimrc
+1. .vimrc.fork
+1. .vimrc.local
+
+加载顺序由先到后:
+
+* before是指那些在spf13-vim安装之前的配置，安装Spf13后会自动把原来的配置迁移至此
+* bundles是指那些包配置，spf13-vim默认包含vundle作为包管理工具
+* local的含义是配置在用户本地的配置修改
+* fork是给那些想要帮助spf13发展的附加层
+
+我这种鶸还是先把VIM掌握熟练吧……
+
+按照这个思路，我应该把自己的配置放入.vimrc.local和.vimrc.bundles.local
+
+下面是我对这些插件配置之后的使用方式：
+
+### UndoTree
+
+UndoTree: 一个可视化的，保存着撤销历史的树
+使用`ctl+u`来进行UndoTree的开关，`u`/`ctl+r`分别代表undo/redo
+
+### NERDTree & Ctrlp
+
+NERDTree: 一个`VIM`下的文件浏览器
+使用`ctl+d`来进行开启
+具体说明见我后面那个叫`NERDTree`的日志
+
+### Syntatstic
+
+Syntatstic: 语法检查工具的合集
+[这篇文章](http://blog.pixelastic.com/2015/10/05/use-local-eslint-in-syntastic/)描述了让syntastic
+使用项目`node_modules`内部的`eslint`来进行代码检查，而不是你全局的`eslint`
+
+相比之下atom的`linter-eslint`还是一直再从全局的`eslint`运行，而这很容易出错，具体不就细说了
+
+### Surround
+
+`Surround`是一个管理成对出现符号的插件
+
+* `ds+符号`: 删除从光标开始的左边和右边找到的第一个`符号`，`符号`为`T`时代表`HTML`标签
+* `cs+符号1+符号2`: 替换从光标开始左右的第一个符号1为符号2，同样`T`可以代替标签
+* `ys+w/b/e+符号`: 在光标当前位置和动作符位置上加入符号
+* `ysi+w/b/e+符号`: 在光标当前位置对应的文本对象两侧加上符号
+
+### `NERDCommenter`
+
+`NERDCommente`允许你操作注释
+
+* `<数字>,c<空格>`取消注释/注释当前行向下的<数字>行
+* `<数字>,c$`从光标处注释到行尾
+* `<数字>,cu`取消注释
+* `<数字>,cA`在本行后面添加注释并进入插入模式
+
+### NEOComplcache
+
+`NEOComplcache`是一个强大的自动补全插件
+
+`<C-k>`: 实现补全
+
+### Fugitive
+
+`Fugutive`向你的文档提供技术支持
+
+`,gw`: Add
+
+### Tabularize
+
+`Tagbularize`方便你实现段落的对齐
+
+### Tagbar
+
+`Tagbar`自动为打开文件生成标签，方便导航
+
+### EasyMotion
+
+`EasyMotion`提供了`vim`屏幕内快速跳转的方式

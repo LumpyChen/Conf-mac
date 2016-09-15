@@ -1,0 +1,322 @@
+---
+layout: page
+title:  "Js难点2：函数类型"
+date:   2016-03-04 19:07:07
+category:   develop
+class:  toughjs
+tags:   
+    -  javascript
+---
+
+
+# Function
+
+## 定义方法
+
+### 函数声明
+
+```javascript
+function name([param[, param[, ... param]]]) { statements }
+```
+
+一个被函数声明创建的函数是一个`Function`对象，具有`Function`对象的所有属性、方法和行为。
+
+
+### 函数表达式
+```javascript
+function [name]([param1[, param2[, ..., paramN]]]) {
+   statements
+}
+```
+
+
+函数表达式与函数声明类似，可以不设置函数名。
+
+>函数声明非常容易意外地被转换为函数表达式。
+当`function`出现在`主码流`，`function`被认为是声明。
+当`function`作为语句`statement`的一部分出现的，都会是表达式。
+
+```javascript
+// 函数声明
+function foo() {}
+// 函数表达式
+(function bar() {})
+// 函数表达式
+x = function hello() {}
+if (x) {
+   // 函数表达式
+   function world() {}
+}
+// 函数声明
+function a() {
+   // 函数声明
+   function b() {}
+   if (0) {
+      //函数表达式
+      function c() {}
+   }
+}
+```
+
+
+### 构造函数
+
+`Function`对象其实存在构造函数，其中最后一个参数被当做函数体。
+
+```javascript
+var sum = new Function('a','b','return a+b')
+sum(3,4)//7
+//这种方法会比多常规方法解析一次字符串
+sum.name//'',没有设置函数名
+```
+
+上面代码的第一句构造函数相当于下列函数表达式：
+
+```javascript
+var sum = function(a,b){
+  return a+b;
+}
+```
+
+### 函数与函数名
+
+```javascript
+function sum (a,b){
+    return a+b
+}
+var anotherSum = sum;
+sum(10,10);//20
+sum = null;//仅仅断绝了sum和null的关系，并没有改变堆内存中的加法function
+anotherSum(10,10);//20
+```
+
+```javascript
+function foo(){
+    return 10;
+}
+foo;//[Function: foo]，返回了内存堆中的函数 —— 函数名是包含函数指针的变量
+foo();//10，返回了函数执行后的返回值 —— 函数名加括号代表执行了函数
+```
+
+>函数是对象，函数名是指针。
+
+## 构造函数 vs 函数声明 vs 函数表达式
+
+>请分清函数名与函数的指针
+
+**函数声明**
+
+```javascript
+function returnSelf(){
+    return returnSelf
+}
+returnSelf();//[Function: returnSelf]
+returnSelf.name//'returnSelf'
+//等同于用Function构造函数创造的对象
+//函数的指针被赋值给变量returnSelf
+//函数名同时也为returnSelf
+```
+
+**（构造函数）函数表达式**
+
+```javascript
+var returnself = function(){
+    return returnself
+}
+returnself();//[Function](匿名函数)
+returnself.name;//''
+//一个匿名函数的函数表达式，被赋值给变量returnself
+//原函数仍然为匿名函数，所以没有函数名
+```
+
+**函数表达式**
+
+```javascript
+var returnself = function returnSelf(){
+    return returnSelf
+}
+returnSelf();//ReferenceError: returnSelf is not defined
+returnself();//[Function: returnSelf]
+//一个命名为returnSelf的函数的函数表达式，被赋值给变量returnself
+//原函数名为returnSelf,但是无法通过函数名访问函数
+returnself.name;
+//'returnSelf'
+```
+
+结论：
+
+>1.  函数名不能被改变，但指向函数的指针可以再赋值。
+2.  函数名只能在函数体内使用。倘若在函数体外使用函数名将会导致错误。
+3.  函数名与被函数赋值的变量是不相同的，彼此之间没有关系。
+4.  函数声明同时也创建了一个和函数名相同的变量。
+
+因此，与函数表达式定义不同，以函数声明定义的函数能够在它们被定义的作用域内通过函数名的指针访问到它们。
+
+函数的声明的解析是在`预执行`阶段，也就是浏览器准备执行代码的时候。
+
+
+## 提升
+
+*   函数声明 —— 存在变量提升 —— 会被直接添加到当前的`执行环境`中
+*   函数表达式 —— 不存在提升
+
+```javascript
+sum(10,10)//20
+function sum (a,b){
+    return a+b
+}
+```
+
+```javascript
+sum(10,10)//Error: unexpected identifier
+var sum = function(a,b){
+    return a+b
+}
+```
+
+```javascript
+if(0){
+    function foo(){}
+}
+foo();//可能会提升，其结果取决于环境
+//所以不要冒险:)
+```
+
+
+## 函数的属性和方法：
+
+* `length` —— 函数希望接收命名的个数
+* `prototype` —— 原型
+* `caller` —— 这个属性保存着调用当前函数的函数的指针
+* `name` —— 函数名
+*  `arguments` —— 函数的参数
+
+```javascript
+function father(){
+  son();
+}
+function son(){
+  return arguments.callee.caller
+}
+father();//[Function: father]
+```
+
+```javascript
+function nameBinding(num){
+    if(num>10){return 1}
+    else{ return num*nameBinding(num-1) }
+}
+function nameNotBinding(num){
+    if(num>10){return 1}
+    else{ return num*arguments.callee(num-1) }
+}//如果函数名称改变，这个函数仍然可以使用。
+```
+
+## 函数内部两个特殊对象：
+
+*   `arguments` —— `类数组`，包含输入的所有参数和`callee`属性，是一个指向本函数的指针。
+*   `this` —— 函数据以执行的`环境对象`
+
+
+### arguments
+
+为类数组`ArrayLike`，是`Object`，非`Array`
+
+`arguments`对象的长度`length`是由实际参数个数而不是指定的形式参数个数决定的
+
+形参是函数内部重新开辟内存空间存储的变量，但是其与`arguments`对象内存空间并不重叠
+
+对于`arguments`和值都存在的情况下，两者值是同步的，但是针对其中一个无值的情况下，对于此无值的情形值不会得以同步。如下代码可以得以验证。
+
+JavaScript中形参的个数严格意义上来讲只是为了方便在函数中的变量操作，实际上实参已经存储在`arguments`对象中了。
+
+另外，从JavaScript函数本身深入理解为什么JavaScript中函数是不能重载的：
+
+在JavaScript中，函数其实也是对象，函数名是关于函数的引用，或者说函数名本身就是变量。
+
+对于如下所示的函数声明与函数表达式，其实以上是一样的,在不考虑函数声明与函数表达式区别的前提下
+非常有利于我们理解JavaScript中函数是不能重载的这一特性。
+
+### this的指向
+
+>一个函数内的`this`指向将该函数当做方法进行调用的对象
+
+**直接执行是`global`：**
+
+```javascript
+function lumpy(){
+  console.log(this)
+};
+lumpy();//'global'
+```
+
+**被当做方法执行时：**
+
+```javascript
+var o = {};
+function lumpy(){
+  console.log(this)
+};
+o.lumpy();//'o';
+```
+
+>可知匿名函数里面的`this`基本上都指向`global`
+
+**特殊情况：**
+
+作为构造函数时
+
+```javascript
+function Lumpy(){
+  return this
+};
+new Lumpy();//'Lumpy {}'
+//new可以改变this的指向
+```
+
+`call`,`bind`,`apply`时：
+
+>见下文的代码块。
+
+## 函数非继承而来的方法
+
+### apply()和call()
+
+—— 在特定作用域下调用函数 —— 扩充函数的作用域
+
+```javascript
+var baseNum = 10;
+var obj = {
+  baseNum:20
+};
+function add(num1,num2){
+  return num1+num2+this.baseNum
+}
+add.call(this,baseNum,baseNum);//10+10+10=30
+//这个this指向global
+add.apply(obj,[baseNum,baseNum]);//10+10+20=40
+//这个this指向obj
+//call,apply改变函数this的值
+```
+
+### bind创建并返回一个新的实例，其this会被绑定
+
+```javascript
+var baseNum = 10;
+var obj = {
+  baseNum:20
+};
+function add(num1,num2){
+  console.log(this);
+  return this.baseNum+num1+num2;
+}
+var addthis = add.bind(obj);
+add(baseNum,obj.baseNum);//40
+//10+10+20
+//这个this指向global
+addthis(baseNum,obj.baseNum);//50
+//20+10+20
+//这个this指向obj
+```
+
+

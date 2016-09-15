@@ -1,0 +1,83 @@
+import { takeLatest } from 'redux-saga'
+import { call } from 'redux-saga/effects'
+
+export function postData(data, url) {
+  return fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: `username=${data.username}&password=${data.password}`,
+  }).then(
+    res => res.json()
+  )
+}
+
+export function *postLogin({ data, resolve, reject }) {
+  try {
+    const res = yield call(postData, data, '/api/login')
+    if (res.result !== 'fail') {
+      resolve(res)
+    } else {
+      reject({
+        username: res.message,
+        password: res.message,
+      })
+    }
+  } catch (e) {
+    reject({
+      username: 'network error',
+      password: 'network error',
+    })
+  }
+}
+
+export function *postFacebookLogin() {
+  yield fetch('/facebookconnect/facebook', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: 'scope=user_posts',
+  })
+}
+
+export function *postSignup({ data, resolve, reject }) {
+  try {
+    const res = yield call(postData, data, '/api/register')
+    if (res.result !== 'fail') {
+      resolve(res)
+    } else {
+      reject({
+        username: res.message,
+        password: res.message,
+      })
+    }
+  } catch (e) {
+    reject({
+      username: 'network error',
+      password: 'network error',
+    })
+  }
+}
+
+
+function *watchLogin() {
+  yield takeLatest('LOGIN_SUBMIT', postLogin)
+}
+
+function *watchFacebookLogin() {
+  yield takeLatest('FACEBOOK_AUTH', postFacebookLogin)
+}
+
+function *watchSignup() {
+  yield takeLatest('signup_SUBMIT', postSignup)
+}
+
+export default function *rootSaga() {
+  yield [
+    watchLogin(),
+    watchSignup(),
+    watchFacebookLogin(),
+  ]
+}

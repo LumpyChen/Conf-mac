@@ -1,0 +1,25 @@
+---
+layout: page
+title:  "六滴科技分享会"
+date:   2016-08-29 19:41:05
+category:   develop
+tags:
+    - Javascript
+---
+# Star Studio Javascript entrance test
+
+在`javascript`中，this
+
+请分析下面`log`的结果是什么：
+
+```javascript
+function a() {
+    function b() {
+        console.log(this);
+    }
+    b();
+}
+a();
+```
+
+如何改变上面的代码，从而改变当前`this`的指向？使用尽可能多的方式
