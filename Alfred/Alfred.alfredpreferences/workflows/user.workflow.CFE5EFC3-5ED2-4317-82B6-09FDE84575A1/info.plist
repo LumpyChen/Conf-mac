@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.jrhoades.jsReserved</string>
+	<key>connections</key>
+	<dict>
+		<key>97EA3280-A6FD-40B9-8A2F-72B37144B52F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EDB042E5-125B-49ED-8B5B-D336C45E5473</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Josh Rhoades</string>
+	<key>description</key>
+	<string>List or Find Reserved Words in JavaScript</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>jsReserved</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>largetypetext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>EDB042E5-125B-49ED-8B5B-D336C45E5473</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"abstract","subtitle":"Natively reserved for compatibility"},{"title":"alert","subtitle":"Implementation-dependent object, method, or property"},{"title":"all","subtitle":"Implementation-dependent object, method, or property"},{"title":"anchor","subtitle":"Implementation-dependent object, method, or property"},{"title":"anchors","subtitle":"Implementation-dependent object, method, or property"},{"title":"area","subtitle":"Implementation-dependent object, method, or property"},{"title":"Array","subtitle":"Implementation-dependent object, method, or property"},{"title":"assign","subtitle":"Implementation-dependent object, method, or property"},{"title":"blur","subtitle":"Implementation-dependent object, method, or property"},{"title":"boolean","subtitle":"Natively reserved for compatibility"},{"title":"break","subtitle":"Natively reserved for compatibility"},{"title":"button","subtitle":"Implementation-dependent object, method, or property"},{"title":"byte","subtitle":"Natively reserved for compatibility"},{"title":"case","subtitle":"Natively reserved for compatibility"},{"title":"catch","subtitle":"Natively reserved for compatibility"},{"title":"char","subtitle":"Natively reserved for compatibility"},{"title":"checkbox","subtitle":"Implementation-dependent object, method, or property"},{"title":"class","subtitle":"Natively reserved for compatibility"},{"title":"clearInterval","subtitle":"Implementation-dependent object, method, or property"},{"title":"clearTimeout","subtitle":"Implementation-dependent object, method, or property"},{"title":"clientInformation","subtitle":"Implementation-dependent object, method, or property"},{"title":"close","subtitle":"Implementation-dependent object, method, or property"},{"title":"closed","subtitle":"Implementation-dependent object, method, or property"},{"title":"confirm","subtitle":"Implementation-dependent object, method, or property"},{"title":"const","subtitle":"Natively reserved for compatibility"},{"title":"constructor","subtitle":"Implementation-dependent object, method, or property"},{"title":"continue","subtitle":"Natively reserved for compatibility"},{"title":"crypto","subtitle":"Implementation-dependent object, method, or property"},{"title":"Date","subtitle":"Implementation-dependent object, method, or property"},{"title":"debugger","subtitle":"Natively reserved for compatibility"},{"title":"decodeURI","subtitle":"Implementation-dependent object, method, or property"},{"title":"decodeURIComponent","subtitle":"Implementation-dependent object, method, or property"},{"title":"default","subtitle":"Natively reserved for compatibility"},{"title":"defaultStatus","subtitle":"Implementation-dependent object, method, or property"},{"title":"delete","subtitle":"Natively reserved for compatibility"},{"title":"do","subtitle":"Natively reserved for compatibility"},{"title":"document","subtitle":"Implementation-dependent object, method, or property"},{"title":"double","subtitle":"Natively reserved for compatibility"},{"title":"element","subtitle":"Implementation-dependent object, method, or property"},{"title":"elements","subtitle":"Implementation-dependent object, method, or property"},{"title":"else","subtitle":"Natively reserved for compatibility"},{"title":"embed","subtitle":"Implementation-dependent object, method, or property"},{"title":"embeds","subtitle":"Implementation-dependent object, method, or property"},{"title":"encodeURI","subtitle":"Implementation-dependent object, method, or property"},{"title":"encodeURIComponent","subtitle":"Implementation-dependent object, method, or property"},{"title":"enum","subtitle":"Natively reserved for compatibility"},{"title":"escape","subtitle":"Implementation-dependent object, method, or property"},{"title":"eval","subtitle":"Implementation-dependent object, method, or property"},{"title":"event","subtitle":"Implementation-dependent object, method, or property"},{"title":"export","subtitle":"Natively reserved for compatibility"},{"title":"extends","subtitle":"Natively reserved for compatibility"},{"title":"false","subtitle":"Natively reserved for compatibility"},{"title":"fileUpload","subtitle":"Implementation-dependent object, method, or property"},{"title":"final","subtitle":"Natively reserved for compatibility"},{"title":"finally","subtitle":"Natively reserved for compatibility"},{"title":"float","subtitle":"Natively reserved for compatibility"},{"title":"focus","subtitle":"Implementation-dependent object, method, or property"},{"title":"for","subtitle":"Natively reserved for compatibility"},{"title":"form","subtitle":"Implementation-dependent object, method, or property"},{"title":"forms","subtitle":"Implementation-dependent object, method, or property"},{"title":"frame","subtitle":"Implementation-dependent object, method, or property"},{"title":"frameRate","subtitle":"Implementation-dependent object, method, or property"},{"title":"frames","subtitle":"Implementation-dependent object, method, or property"},{"title":"function","subtitle":"Implementation-dependent object, method, or property"},{"title":"function","subtitle":"Natively reserved for compatibility"},{"title":"getClass","subtitle":"Implementation-dependent object, method, or property"},{"title":"goto","subtitle":"Natively reserved for compatibility"},{"title":"hasOwnProperty","subtitle":"Implementation-dependent object, method, or property"},{"title":"hidden","subtitle":"Implementation-dependent object, method, or property"},{"title":"history","subtitle":"Implementation-dependent object, method, or property"},{"title":"if","subtitle":"Natively reserved for compatibility"},{"title":"image","subtitle":"Implementation-dependent object, method, or property"},{"title":"images","subtitle":"Implementation-dependent object, method, or property"},{"title":"implements","subtitle":"Natively reserved for compatibility"},{"title":"import","subtitle":"Natively reserved for compatibility"},{"title":"in","subtitle":"Natively reserved for compatibility"},{"title":"Infinity","subtitle":"Implementation-dependent object, method, or property"},{"title":"innerHeight","subtitle":"Implementation-dependent object, method, or property"},{"title":"innerWidth","subtitle":"Implementation-dependent object, method, or property"},{"title":"instanceof","subtitle":"Natively reserved for compatibility"},{"title":"int","subtitle":"Natively reserved for compatibility"},{"title":"interface","subtitle":"Natively reserved for compatibility"},{"title":"isFinite","subtitle":"Implementation-dependent object, method, or property"},{"title":"isNaN","subtitle":"Implementation-dependent object, method, or property"},{"title":"isPrototypeOf","subtitle":"Implementation-dependent object, method, or property"},{"title":"java","subtitle":"Implementation-dependent object, method, or property"},{"title":"JavaArray","subtitle":"Implementation-dependent object, method, or property"},{"title":"JavaClass","subtitle":"Implementation-dependent object, method, or property"},{"title":"JavaObject","subtitle":"Implementation-dependent object, method, or property"},{"title":"JavaPackage","subtitle":"Implementation-dependent object, method, or property"},{"title":"layer","subtitle":"Implementation-dependent object, method, or property"},{"title":"layers","subtitle":"Implementation-dependent object, method, or property"},{"title":"length","subtitle":"Implementation-dependent object, method, or property"},{"title":"let","subtitle":"Natively reserved for compatibility"},{"title":"link","subtitle":"Implementation-dependent object, method, or property"},{"title":"location","subtitle":"Implementation-dependent object, method, or property"},{"title":"long","subtitle":"Natively reserved for compatibility"},{"title":"Math","subtitle":"Implementation-dependent object, method, or property"},{"title":"mimeTypes","subtitle":"Implementation-dependent object, method, or property"},{"title":"name","subtitle":"Implementation-dependent object, method, or property"},{"title":"NaN","subtitle":"Implementation-dependent object, method, or property"},{"title":"native","subtitle":"Natively reserved for compatibility"},{"title":"navigate","subtitle":"Implementation-dependent object, method, or property"},{"title":"navigator","subtitle":"Implementation-dependent object, method, or property"},{"title":"new","subtitle":"Natively reserved for compatibility"},{"title":"null","subtitle":"Natively reserved for compatibility"},{"title":"Number","subtitle":"Implementation-dependent object, method, or property"},{"title":"Object","subtitle":"Implementation-dependent object, method, or property"},{"title":"offscreenBuffering","subtitle":"Implementation-dependent object, method, or property"},{"title":"onbeforeunload","subtitle":"Reserved due to event handler usage"},{"title":"onblur","subtitle":"Reserved due to event handler usage"},{"title":"onclick","subtitle":"Reserved due to event handler usage"},{"title":"oncontextmenu","subtitle":"Reserved due to event handler usage"},{"title":"ondragdrop","subtitle":"Reserved due to event handler usage"},{"title":"ondragdrop","subtitle":"Reserved due to event handler usage"},{"title":"onerror","subtitle":"Reserved due to event handler usage"},{"title":"onfocus","subtitle":"Reserved due to event handler usage"},{"title":"onkeydown","subtitle":"Reserved due to event handler usage"},{"title":"onkeypress","subtitle":"Reserved due to event handler usage"},{"title":"onkeyup","subtitle":"Reserved due to event handler usage"},{"title":"onload","subtitle":"Reserved due to event handler usage"},{"title":"onmousedown","subtitle":"Reserved due to event handler usage"},{"title":"onmousemove","subtitle":"Reserved due to event handler usage"},{"title":"onmouseout","subtitle":"Reserved due to event handler usage"},{"title":"onmouseover","subtitle":"Reserved due to event handler usage"},{"title":"onmouseup","subtitle":"Reserved due to event handler usage"},{"title":"onreset","subtitle":"Reserved due to event handler usage"},{"title":"onsubmit","subtitle":"Reserved due to event handler usage"},{"title":"onunload","subtitle":"Reserved due to event handler usage"},{"title":"open","subtitle":"Implementation-dependent object, method, or property"},{"title":"opener","subtitle":"Implementation-dependent object, method, or property"},{"title":"option","subtitle":"Implementation-dependent object, method, or property"},{"title":"outerHeight","subtitle":"Implementation-dependent object, method, or property"},{"title":"outerWidth","subtitle":"Implementation-dependent object, method, or property"},{"title":"package","subtitle":"Natively reserved for compatibility"},{"title":"packages","subtitle":"Implementation-dependent object, method, or property"},{"title":"pageXOffset","subtitle":"Implementation-dependent object, method, or property"},{"title":"pageYOffset","subtitle":"Implementation-dependent object, method, or property"},{"title":"parent","subtitle":"Implementation-dependent object, method, or property"},{"title":"parseFloat","subtitle":"Implementation-dependent object, method, or property"},{"title":"parseInt","subtitle":"Implementation-dependent object, method, or property"},{"title":"password","subtitle":"Implementation-dependent object, method, or property"},{"title":"pkcs11","subtitle":"Implementation-dependent object, method, or property"},{"title":"plugin","subtitle":"Implementation-dependent object, method, or property"},{"title":"private","subtitle":"Natively reserved for compatibility"},{"title":"prompt","subtitle":"Implementation-dependent object, method, or property"},{"title":"propertyIsEnum","subtitle":"Implementation-dependent object, method, or property"},{"title":"protected","subtitle":"Natively reserved for compatibility"},{"title":"prototype","subtitle":"Implementation-dependent object, method, or property"},{"title":"public","subtitle":"Natively reserved for compatibility"},{"title":"radio","subtitle":"Implementation-dependent object, method, or property"},{"title":"reset","subtitle":"Implementation-dependent object, method, or property"},{"title":"return","subtitle":"Natively reserved for compatibility"},{"title":"screenX","subtitle":"Implementation-dependent object, method, or property"},{"title":"screenY","subtitle":"Implementation-dependent object, method, or property"},{"title":"scroll","subtitle":"Implementation-dependent object, method, or property"},{"title":"secure","subtitle":"Implementation-dependent object, method, or property"},{"title":"select","subtitle":"Implementation-dependent object, method, or property"},{"title":"self","subtitle":"Implementation-dependent object, method, or property"},{"title":"setInterval","subtitle":"Implementation-dependent object, method, or property"},{"title":"setTimeout","subtitle":"Implementation-dependent object, method, or property"},{"title":"short","subtitle":"Natively reserved for compatibility"},{"title":"static","subtitle":"Natively reserved for compatibility"},{"title":"status","subtitle":"Implementation-dependent object, method, or property"},{"title":"String","subtitle":"Implementation-dependent object, method, or property"},{"title":"submit","subtitle":"Implementation-dependent object, method, or property"},{"title":"super","subtitle":"Natively reserved for compatibility"},{"title":"switch","subtitle":"Natively reserved for compatibility"},{"title":"synchronized","subtitle":"Natively reserved for compatibility"},{"title":"taint","subtitle":"Implementation-dependent object, method, or property"},{"title":"text","subtitle":"Implementation-dependent object, method, or property"},{"title":"textarea","subtitle":"Implementation-dependent object, method, or property"},{"title":"this","subtitle":"Natively reserved for compatibility"},{"title":"throw","subtitle":"Natively reserved for compatibility"},{"title":"throws","subtitle":"Natively reserved for compatibility"},{"title":"top","subtitle":"Implementation-dependent object, method, or property"},{"title":"toString","subtitle":"Implementation-dependent object, method, or property"},{"title":"transient","subtitle":"Natively reserved for compatibility"},{"title":"true","subtitle":"Natively reserved for compatibility"},{"title":"try","subtitle":"Natively reserved for compatibility"},{"title":"typeof","subtitle":"Natively reserved for compatibility"},{"title":"undefined","subtitle":"Implementation-dependent object, method, or property"},{"title":"unescape","subtitle":"Implementation-dependent object, method, or property"},{"title":"untaint","subtitle":"Implementation-dependent object, method, or property"},{"title":"valueOf","subtitle":"Implementation-dependent object, method, or property"},{"title":"var","subtitle":"Natively reserved for compatibility"},{"title":"void","subtitle":"Natively reserved for compatibility"},{"title":"volatile","subtitle":"Natively reserved for compatibility"},{"title":"while","subtitle":"Natively reserved for compatibility"},{"title":"window","subtitle":"Implementation-dependent object, method, or property"},{"title":"with","subtitle":"Natively reserved for compatibility"}]</string>
+				<key>keyword</key>
+				<string>jsreserved</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Reserved Words in JavaScript</string>
+				<key>title</key>
+				<string>jsReserved</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>97EA3280-A6FD-40B9-8A2F-72B37144B52F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>The List Filter object allows you to pre-define options and pass it on to the next object.
+
+In this workflow, you can choose from the list by using the keyword "feeling". You'll see options in Alfred's results, and selecting one of the results will make the relevant argument appear in Large Type on your screen.
+
+For more advanced use of the List Filter object, take a look at the "To-do list using List Filters" example workflow.</string>
+	<key>uidata</key>
+	<dict>
+		<key>97EA3280-A6FD-40B9-8A2F-72B37144B52F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>EDB042E5-125B-49ED-8B5B-D336C45E5473</key>
+		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>http://www.joshuarhoades.com/</string>
+</dict>
+</plist>

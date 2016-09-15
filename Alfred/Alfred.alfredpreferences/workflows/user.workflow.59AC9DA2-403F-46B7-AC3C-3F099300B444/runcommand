@@ -1,0 +1,48 @@
+runScope="$1"
+shift
+commandRun="$@"
+commandsFile='/tmp/runcommand'
+dirPath=$(osascript -e 'tell application "Finder" to return (quoted form of POSIX path of (insertion location as alias))')
+
+# only source shell files that exist (prevents blocking errors in some shells)
+sourceShellFiles() {
+  for file in $@; do
+    [[ -f "${file}" ]] && shellFiles="${shellFiles} source ${file};"
+  done
+}
+
+if [[ $SHELL == *'bash' ]]; then
+  sourceShellFiles "${HOME}/.bash_profile" "${HOME}/.profile" "${HOME}/.bashrc"
+  setAliases='shopt -s expand_aliases'
+elif [[ $SHELL == *'zsh' ]]; then
+  sourceShellFiles '/etc/zshenv' "${HOME}/.zshenv" "${HOME}/.zshrc"
+  setAliases='setopt aliases'
+elif [[ $SHELL == *'tcsh' ]]; then
+  sourceShellFiles '/etc/csh.cshrc' "${HOME}/.tcshrc" "${HOME}/.cshrc"
+elif [[ $SHELL == *'csh' ]]; then
+  sourceShellFiles '/etc/csh.cshrc' "${HOME}/.cshrc"
+elif [[ $SHELL == *'fish' ]]; then
+  sourceShellFiles "$HOME/.config/fish/config.fish" # variables cannot be bracketed in fish
+else
+  echo 'Unrecognised shell.' 1>&2
+fi
+
+cat <<- EOF | perl -pe 's/^\s*//' > "${commandsFile}"
+  #!$SHELL
+  ${setAliases}
+  ${shellFiles}
+  cd ${dirPath}
+EOF
+
+if [[ "${runScope}" == 'runInDir' ]]; then
+  echo "${commandRun}" >> "${commandsFile}"
+else
+  echo "cat /tmp/runcommandfilelist | xargs -0 -J {} ${commandRun}" >> "${commandsFile}"
+fi
+
+chmod +x "${commandsFile}"
+${commandsFile}
+exit_status="$?" # needed to record the exit status from the actual command, not from the next 'rm'
+rm "${commandsFile}"
+
+exit "${exit_status}"

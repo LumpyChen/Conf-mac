@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>React Launcher</name>
+  <version>1.0.0</version>
+  <bundle>ca.winkerVSbecks.reactLauncher</bundle>
+  <updated>1471729746</updated>
+  <file>react-launcher.alfredworkflow</file>
+</workflow>

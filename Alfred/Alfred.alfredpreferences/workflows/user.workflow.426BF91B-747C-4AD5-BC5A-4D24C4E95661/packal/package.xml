@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>Markdown to Pressentation Workflow</name>
+  <version>1.0</version>
+  <bundle>com.customct.MDSlides</bundle>
+  <updated>1422011862</updated>
+  <file>markdownpressentation.alfredworkflow</file>
+</workflow>

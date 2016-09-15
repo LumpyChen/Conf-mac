@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.customct.MDSlides</string>
+	<key>connections</key>
+	<dict>
+		<key>3C34CF49-456A-46A8-9F93-4B74D4B5602B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9BD36009-711A-49C0-9D38-BD941FF99B83</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>91D60168-B72A-4A1B-A555-9BB1DADD2F39</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C34CF49-456A-46A8-9F93-4B74D4B5602B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>AA7DD6FC-EFB8-4839-9501-F1356E3FC37E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>51D74456-F22C-40E0-9509-C57922CDAC9B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D348EEAE-7EA0-40DA-AC58-021F268801AF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5C10BE71-E41F-428D-B724-7374A679BC65</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Richard Guay</string>
+	<key>description</key>
+	<string>A workflow for converting markdown notes to a slide presentation.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Markdown to Pressentation</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array>
+					<string>com.foldingtext.foldingtext.document</string>
+					<string>net.daringfireball.markdown</string>
+				</array>
+				<key>name</key>
+				<string>Markdown to Slides</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>D348EEAE-7EA0-40DA-AC58-021F268801AF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>
+#########################
+# Contants.
+#########################
+VPREFS="${HOME}/Library/Caches/com.runningwithcrayons.Alfred-2/Workflow Data/"
+NVPREFS="${HOME}/Library/Application Support/Alfred 2/Workflow Data/"
+
+###############################################################################
+# Read the bundleid from the workflow's info.plist
+###############################################################################
+getBundleId() {
+  /usr/libexec/PlistBuddy  -c "Print :bundleid" "info.plist"
+}
+
+###############################################################################
+# Get the workflow data dir
+###############################################################################
+getDataDir() {
+  local BUNDLEID=$(getBundleId)
+  echo "${NVPREFS}${BUNDLEID}"
+}
+
+if [ ! -d "$(getDataDir)" ]; then
+   mkdir -p "$(getDataDir)";
+   echo "Basic" &gt; "$(getDataDir)/theme.txt";
+fi
+
+#
+# Get the theme.
+#
+theme=`cat "$(getDataDir)/theme.txt"`;
+themeDir="$(getDataDir)";
+
+#
+# Convert the file and open the given index.html file.
+#
+index=`ruby presentation $theme "{query}" "$themeDir"`;
+open "$index";
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5C10BE71-E41F-428D-B724-7374A679BC65</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>
+#########################
+# Contants.
+#########################
+VPREFS="${HOME}/Library/Caches/com.runningwithcrayons.Alfred-2/Workflow Data/"
+NVPREFS="${HOME}/Library/Application Support/Alfred 2/Workflow Data/"
+
+###############################################################################
+# Read the bundleid from the workflow's info.plist
+###############################################################################
+getBundleId() {
+  /usr/libexec/PlistBuddy  -c "Print :bundleid" "info.plist"
+}
+
+###############################################################################
+# Get the workflow data dir
+###############################################################################
+getDataDir() {
+  local BUNDLEID=$(getBundleId)
+  echo "${NVPREFS}${BUNDLEID}"
+}
+
+if [ ! -d "$(getDataDir)" ]; then
+   mkdir -p "$(getDataDir)";
+   echo "Basic" &gt; "$(getDataDir)/theme.txt";
+fi
+
+#
+# Save the theme file.
+#
+echo "{query}" &gt; "$(getDataDir)/theme.txt";
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>51D74456-F22C-40E0-9509-C57922CDAC9B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>mds:theme</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading Themes....</string>
+				<key>script</key>
+				<string>include_once("workflows.php");
+error_reporting(0);
+
+$wf = new Workflows();
+$raw = trim("{query}");
+$input = "/.*$raw.*/i";
+$themedir = $wf-&gt;data();
+$currDir = getcwd();
+
+if(! is_file("$themedir/Basic.css") ) {
+	mkdir($themedir);
+	chdir($currDir);
+	exec("/bin/bash ./copyThemes");
+}
+
+chdir($themedir);
+exec("/bin/ls *.css",$output);
+
+$count = 0;
+foreach ($output as $line) {
+	if(strcmp($line,"") != 0) {
+		$name = split("\.",$line);
+		$name = $name[0];
+		if(preg_match($input,$name) === 1) {
+			$wf-&gt;result($count, $name, $name, "Markdown to Pressentation Workflow", "icon.png", "yes", $line);
+			$count++;
+		}
+	}
+}
+
+if($count &lt; 1) {
+	$wf-&gt;result("999","","No Files in the List.","Markdown to Pressentation Workflow","icon.png","no","");
+}
+
+//
+// Echo out the xml of the choices.
+//
+echo $wf-&gt;toxml();
+
+</string>
+				<key>subtext</key>
+				<string>Markdown to Pressentation</string>
+				<key>title</key>
+				<string>Select Theme</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AA7DD6FC-EFB8-4839-9501-F1356E3FC37E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>
+#########################
+# Contants.
+#########################
+VPREFS="${HOME}/Library/Caches/com.runningwithcrayons.Alfred-2/Workflow Data/"
+NVPREFS="${HOME}/Library/Application Support/Alfred 2/Workflow Data/"
+
+###############################################################################
+# Read the bundleid from the workflow's info.plist
+###############################################################################
+getBundleId() {
+  /usr/libexec/PlistBuddy  -c "Print :bundleid" "info.plist"
+}
+
+###############################################################################
+# Get the workflow data dir
+###############################################################################
+getDataDir() {
+  local BUNDLEID=$(getBundleId)
+  echo "${NVPREFS}${BUNDLEID}"
+}
+
+if [ ! -d "$(getDataDir)" ]; then
+   mkdir -p "$(getDataDir)";
+   echo "Basic" &gt; "$(getDataDir)/theme.txt";
+fi
+
+#
+# Save the theme file.
+#
+echo -n `cat "$(getDataDir)/theme.txt"`;
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3C34CF49-456A-46A8-9F93-4B74D4B5602B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>mds:showtheme</string>
+				<key>subtext</key>
+				<string>Markdown to Pressentation</string>
+				<key>text</key>
+				<string>Show the current Theme</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>91D60168-B72A-4A1B-A555-9BB1DADD2F39</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Markdown to Pressentation</string>
+				<key>title</key>
+				<string>{query} Theme is set.</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>9BD36009-711A-49C0-9D38-BD941FF99B83</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow is created by Richard Guay. Visit http://customct.com/alfred-2-workflows for even more fun!
+
+This has a single file action that takes the given markdown file and converts it to a slide show in HTML and CSS.
+
+The command "mds:theme" is used to set the theme. It will let the user pick from a list of themes.
+
+The command "mrs:show theme" shows the user the currently set theme.</string>
+	<key>uidata</key>
+	<dict>
+		<key>3C34CF49-456A-46A8-9F93-4B74D4B5602B</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>51D74456-F22C-40E0-9509-C57922CDAC9B</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>5C10BE71-E41F-428D-B724-7374A679BC65</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>91D60168-B72A-4A1B-A555-9BB1DADD2F39</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>9BD36009-711A-49C0-9D38-BD941FF99B83</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>AA7DD6FC-EFB8-4839-9501-F1356E3FC37E</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>D348EEAE-7EA0-40DA-AC58-021F268801AF</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://customct.com/alfred-2-workflows</string>
+</dict>
+</plist>

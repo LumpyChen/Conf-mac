@@ -1,0 +1,83 @@
+#!/usr/bin/ruby
+
+#
+# Load libraries that will be used.
+#
+require("FileUtils")
+
+#
+# Set some variables.
+#
+pressBaseDir = File.expand_path(".")
+
+#
+# Get the slide presentation parts loaded.
+#
+presBegin = `cat '#{pressBaseDir}/presbegin.html'`
+presEnd = `cat '#{pressBaseDir}/presend.html'`
+
+theme = ARGV[0]
+presFile = ARGV[1]
+pressBaseDir = ARGV[2]
+
+#
+# Get the directory of the presentation.
+#
+$presDir = File.dirname(presFile)
+
+#
+# Convert the Markdown to HTML.
+#
+presTextHTML = `cat '#{presFile}' | kramdown`
+
+#
+# Convert the horizontal rules to the divs we need.
+#
+$divCount = 1
+while presTextHTML.sub!(/\<hr \/\>/, "</div></div><div id='section#{$divCount}' class='section'><div class='slide'>") != nil do
+		$divCount = $divCount + 1
+end
+$divCount = $divCount -1
+
+#
+# Make sure the last div gets closed.
+#
+
+presTextHTML += "</div>";
+
+#
+# Fix all images to be on it's own after the slide div.
+#
+m = /\<p\>\<img src\=\"(.*)\" alt\=\"(.*)\" \/\>\<\/p\>/.match(presTextHTML)
+if m != nil
+
+	postMatch = ""
+	presTextHTML = ""
+	while m != nil
+		presTextHTML += m.pre_match
+		presTextHTML += "<img src='#{m[1]}' class='#{m[2]}' />"
+		postMatch = m.post_match
+		m = /\<p\>\<img src\=\"(.*)\" alt\=\"(.*)\" \/\>\<\/p\>/.match(m.post_match)
+	end
+	presTextHTML += postMatch
+end
+presTextHTML += "<script> window.MaxSlideNum = #{$divCount}; </script>"
+
+#
+# Write the HTML to an index.html file in that directory.
+#
+target = open("#{$presDir}/index.html", 'w')
+target.truncate(0)
+target.write(presBegin + presTextHTML + presEnd)
+target.close
+
+#
+# Copy the CSS file to that directory and rename it to theme.css.
+#
+FileUtils.cp("#{pressBaseDir}/#{theme}.css",$presDir)
+File.rename("#{$presDir}/#{theme}.css","#{$presDir}/theme.css")
+
+#
+# Tell the command line where the index.html file is.
+#
+puts("#{$presDir}/index.html")

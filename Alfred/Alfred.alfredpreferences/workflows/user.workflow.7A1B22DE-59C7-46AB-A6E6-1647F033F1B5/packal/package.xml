@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>Find Lyrics of Current Song on Rap Genius</name>
+  <version>1.0</version>
+  <bundle>com.rudzitis.lyrics</bundle>
+  <updated>1409247394</updated>
+  <file>alfred_lyrics.alfredworkflow</file>
+</workflow>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>awe</name>
+  <version>0.2.2</version>
+  <bundle>com.importre.alfred.awe</bundle>
+  <updated>1468713134</updated>
+  <file>awe.alfredworkflow</file>
+</workflow>

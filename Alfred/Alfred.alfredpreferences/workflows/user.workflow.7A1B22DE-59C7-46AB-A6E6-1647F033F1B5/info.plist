@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.rudzitis.lyrics</string>
+	<key>connections</key>
+	<dict>
+		<key>80218502-1684-4DC9-8ECA-C9BF09AB3F4F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D140E2D-9716-441E-A464-A0BB4FF78252</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5C54FE43-B065-4070-91E1-BB59C8A5A003</string>
+				<key>modifiers</key>
+				<integer>8388608</integer>
+				<key>modifiersubtext</key>
+				<string>Current Spotify Song</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>03B98DCA-4188-47E4-918C-632667653E98</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Current Rdio Song</string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Ryan Rudzitis</string>
+	<key>description</key>
+	<string>Look up the current playing song on Rap Genius</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Look up Lyrics of Current Song on Rap Genius</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "Safari" to activateif appIsRunning("iTunes") then	tell application "iTunes"		if exists name of current track then			set aTrack to the current track			set aName to name of aTrack			set theURL to "http://genius.com/search?q=" &amp; aName			tell application "Safari"				activate				try					tell window 1 to set current tab to (make new tab with properties {URL:theURL})				on error					open location theURL --run this if safari does not have a window open				end try			end tell		end if	end tellend if
+end alfred_script
+
+on appIsRunning(appName)
+	tell application "System Events" to (name of processes) contains appName
+end appIsRunning</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>8D140E2D-9716-441E-A464-A0BB4FF78252</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>lyrics</string>
+				<key>subtext</key>
+				<string>Find lyrics for current iTunes Song</string>
+				<key>text</key>
+				<string>Find Lyrics</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>80218502-1684-4DC9-8ECA-C9BF09AB3F4F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "Safari" to activateif appIsRunning("Spotify") then	tell application "Spotify"		set aTrack to the current track		set aName to name of aTrack		set theURL to "http://genius.com/search?q=" &amp; aName		tell application "Safari"			activate			try				tell window 1 to set current tab to (make new tab with properties {URL:theURL})			on error				open location theURL --run this if safari does not have a window open			end try		end tell	end tellend if
+end alfred_scripton appIsRunning(appName)	tell application "System Events" to (name of processes) contains appNameend appIsRunning
+</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>5C54FE43-B065-4070-91E1-BB59C8A5A003</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "Safari" to activateif appIsRunning("Rdio") then	tell application "Rdio"		set aTrack to the current track		set aName to name of aTrack		set theURL to "http://genius.com/search?q=" &amp; aName		tell application "Safari"			activate			try				tell window 1 to set current tab to (make new tab with properties {URL:theURL})			on error				open location theURL --run this if safari does not have a window open			end try		end tell	end tellend if
+end alfred_scripton appIsRunning(appName)	tell application "System Events" to (name of processes) contains appNameend appIsRunning</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>03B98DCA-4188-47E4-918C-632667653E98</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>03B98DCA-4188-47E4-918C-632667653E98</key>
+		<dict>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>5C54FE43-B065-4070-91E1-BB59C8A5A003</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>80218502-1684-4DC9-8ECA-C9BF09AB3F4F</key>
+		<dict>
+			<key>ypos</key>
+			<real>190</real>
+		</dict>
+		<key>8D140E2D-9716-441E-A464-A0BB4FF78252</key>
+		<dict>
+			<key>ypos</key>
+			<real>140</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
