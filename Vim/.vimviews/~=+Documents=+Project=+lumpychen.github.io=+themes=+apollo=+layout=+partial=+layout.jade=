@@ -13,15 +13,8 @@ inoremap <buffer> <silent> " =AutoPairsInsert('"')
 inoremap <buffer> <silent> ' =AutoPairsInsert('''')
 inoremap <buffer> <silent> ( =AutoPairsInsert('(')
 inoremap <buffer> <silent> ) =AutoPairsInsert(')')
-inoremap <buffer> <silent> < <><Left>
-onoremap <buffer> <silent> ð :call AutoPairsToggle()
-xnoremap <buffer> <silent> ð :call AutoPairsToggle()
-nnoremap <buffer> <silent> ð :call AutoPairsToggle()
-onoremap <buffer> <silent> î :call AutoPairsJump()
-xnoremap <buffer> <silent> î :call AutoPairsJump()
-nnoremap <buffer> <silent> î :call AutoPairsJump()
-snoremap <buffer> <silent> î :call AutoPairsJump()
-snoremap <buffer> <silent> ð :call AutoPairsToggle()
+noremap <buffer> <silent> î :call AutoPairsJump()
+noremap <buffer> <silent> ð :call AutoPairsToggle()
 inoremap <buffer> <silent> [ =AutoPairsInsert('[')
 inoremap <buffer> <silent> ] =AutoPairsInsert(']')
 inoremap <buffer> <silent> ` =AutoPairsInsert('`')
@@ -41,11 +34,11 @@ setlocal buflisted
 setlocal buftype=
 setlocal nocindent
 setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
-setlocal cinoptions=j1,J1
+setlocal cinoptions=
 setlocal cinwords=if,else,while,do,for,switch
 setlocal colorcolumn=
-setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
-setlocal commentstring=<!--%s-->
+setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+setlocal commentstring=/*%s*/
 setlocal complete=.,w,b,u,t,i
 setlocal concealcursor=i
 setlocal conceallevel=2
@@ -61,8 +54,8 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal expandtab
-if &filetype != 'html'
-setlocal filetype=html
+if &filetype != ''
+setlocal filetype=
 endif
 setlocal fixendofline
 setlocal foldcolumn=0
@@ -83,23 +76,23 @@ setlocal iminsert=0
 setlocal imsearch=0
 setlocal include=
 setlocal includeexpr=
-setlocal indentexpr=GetCoffeeHtmlIndent(v:lnum)
-setlocal indentkeys=o,O,<Return>,<>>,{,},!^F
+setlocal indentexpr=
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
 setlocal noinfercase
-setlocal iskeyword=@,48-57,_,192-255,-,#,.
+setlocal iskeyword=@,48-57,_,192-255
 setlocal keywordprg=
 setlocal nolinebreak
 setlocal nolisp
 setlocal lispwords=
 setlocal list
 setlocal makeprg=
-setlocal matchpairs=(:),{:},[:],<:>
+setlocal matchpairs=(:),{:},[:]
 setlocal modeline
 setlocal modifiable
 setlocal nrformats=bin,octal,hex
 setlocal number
 setlocal numberwidth=4
-setlocal omnifunc=htmlcomplete#CompleteTags
+setlocal omnifunc=
 setlocal path=
 setlocal nopreserveindent
 setlocal nopreviewwindow
@@ -122,8 +115,8 @@ setlocal statusline=%!airline#statusline(1)
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != 'html'
-setlocal syntax=html
+if &syntax != ''
+setlocal syntax=
 endif
 setlocal tabstop=2
 setlocal tagcase=
@@ -137,13 +130,13 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 16 - ((10 * winheight(0) + 11) / 23)
+let s:l = 9 - ((8 * winheight(0) + 11) / 23)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-16
-normal! 058|
-lcd ~/Documents
+9
+normal! 034|
+lcd ~/Documents/Project/lumpychen.github.io/themes/apollo/layout/partial
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :

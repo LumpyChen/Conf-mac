@@ -11,19 +11,31 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/webdeviconsconcealnerdtreebrackets = 0
+~MSle0~/font-famil
 
 # Last Substitute Search Pattern:
-~MSle0~&webdeviconsconcealnerdtreebrackets = 0
+~MSle0&webdeviconsconcealnerdtreebrackets = 0
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1473982870,,"wq"
 :q
-|2,0,1473982762,,"q"
+|2,0,1474034013,,"q"
+:q!
+|2,0,1474033568,,"q!"
+:w
+|2,0,1474033089,,"w"
+:wq
+|2,0,1474033040,,"wq"
+:s
+|2,0,1474020451,,"s"
+:ww
+|2,0,1474011492,,"ww"
+:35
+|2,0,1474011917,,"35"
+:W
+|2,0,1473952904,,"W"
 :let g:webdevicons_conceal_nerdtree_brackets = 1
 |2,0,1473982215,,"let g:webdevicons_conceal_nerdtree_brackets = 1"
 :webdeviconsconcealnerdtreebrackets = 0
@@ -38,8 +50,6 @@ $
 |2,0,1473982074,,"echo g:webdevicons_conceal_nerdtree_brackets"
 :PluginInstall
 |2,0,1473959078,,"PluginInstall"
-:w
-|2,0,1473958929,,"w"
 ::echo webdevicons#version()
 |2,0,1473956158,,":echo webdevicons#version()"
 :!vim --version
@@ -50,8 +60,6 @@ $
 |2,0,1473954973,,"so ~/.vimrc"
 :'<,'>q
 |2,0,1473954923,,"'<,'>q"
-:q!
-|2,0,1473954899,,"q!"
 :q1
 |2,0,1473949168,,"q1"
 :emmet
@@ -100,8 +108,6 @@ $
 |2,0,0,,"WQ"
 :Q
 |2,0,0,,"Q"
-:s
-|2,0,0,,"s"
 :Gits
 |2,0,0,,"Gits"
 :Gs
@@ -322,6 +328,28 @@ $
 |2,0,0,,"has('lua')"
 
 # Search String History (newest to oldest):
+?/font-famil
+|2,1,1474030296,47,"font-famil"
+?/lang
+|2,1,1474020317,47,"lang"
+?/new
+|2,1,1474019947,47,"new"
+?/timez
+|2,1,1474018995,47,"timez"
+?/jona
+|2,1,1474014833,47,"jona"
+?/light
+|2,1,1474014582,47,"light"
+?/green
+|2,1,1474014459,47,"green"
+?/Home
+|2,1,1474004953,47,"Home"
+? \<Miscellaneous\>
+|2,1,1474002408,,"\\<Miscellaneous\\>"
+?/theme
+|2,1,1474002300,47,"theme"
+?/lang: en
+|2,1,1474000437,47,"lang: en"
 ? webdeviconsconcealnerdtreebrackets = 0
 |2,1,1473982137,,"webdeviconsconcealnerdtreebrackets = 0"
 ? webdevicons_conceal_nerdtree_brackets = 0
@@ -522,6 +550,8 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@/Users/lumpychen/Documents/Project/lumpychen.github.io/source/_posts/hello.md
+|2,3,1474008459,,"/Users/lumpychen/Documents/Project/lumpychen.github.io/source/_posts/hello.md"
 @/Users/lumpychen/Documents/Repo/devicons-master/new.html
 |2,3,1473948513,,"/Users/lumpychen/Documents/Repo/devicons-master/new.html"
 @/Users/lumpychen/Documents/Demo/
@@ -566,53 +596,40 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	" vim-devicon begins
-	if exists('g:loaded_webdevicons')
-	  call webdevicons#refresh()
-	endif
-	let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-	let g:DevIconsEnableFoldersOpenClose = 1
-	let g:webdevicons_conceal_nerdtree_brackets = 1
-	let g:webdevicons_enable_nerdtree = 1
-	" vim-devicon ends
-|3,0,0,1,9,0,1473982711,"\" vim-devicon begins","if exists('g:loaded_webdevicons')","  call webdevicons#refresh()","endif","let g:WebDevIconsUnicodeDecorateFolderNodes = 1","let g:DevIconsEnableFoldersOpenClose = 1","let g:webdevicons_conceal_nerdtree_brackets = 1","let g:webdevicons_enable_nerdtree = 1","\" vim-devicon ends"
-""1	LINE	0
-	" vim-devicon begins
-	if exists('g:loaded_webdevicons')
-	  call webdevicons#refresh()
-	endif
-	let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-	let g:DevIconsEnableFoldersOpenClose = 1
-	let g:webdevicons_conceal_nerdtree_brackets = 1
-	let g:webdevicons_enable_nerdtree = 1
-	" vim-devicon ends
-|3,1,1,1,9,0,1473982714,"\" vim-devicon begins","if exists('g:loaded_webdevicons')","  call webdevicons#refresh()","endif","let g:WebDevIconsUnicodeDecorateFolderNodes = 1","let g:DevIconsEnableFoldersOpenClose = 1","let g:webdevicons_conceal_nerdtree_brackets = 1","let g:webdevicons_enable_nerdtree = 1","\" vim-devicon ends"
-"2	LINE	0
-	let g:DevIconsEnableFolderExtensionPatternMatching = 1
-|3,0,2,1,1,0,1473961541,"let g:DevIconsEnableFolderExtensionPatternMatching = 1"
+""0	LINE	0
+	▸ [   ]node_modules/
+|3,1,0,1,1,0,1474033339,"▸ [   ]node_modules/"
+"1	CHAR	0
+	white]%}  "
+	    ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[
+|3,0,1,0,2,0,1474014275,"white]%}  \"","    ZSH_THEME_GIT_PROMPT_RENAMED=\"%{$fg["
+"2	CHAR	0
+	green]%}  "
+	    ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%}  "
+	    ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}  "
+	    ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[
+|3,0,2,0,4,0,1474014238,"green]%}  \"","    ZSH_THEME_GIT_PROMPT_MODIFIED=\"%{$fg[blue]%}  \"","    ZSH_THEME_GIT_PROMPT_DELETED=\"%{$fg[red]%}  \"","    ZSH_THEME_GIT_PROMPT_RENAMED=\"%{$fg["
 "3	LINE	0
-	let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = '1'
-|3,0,3,1,1,0,1473960367,"let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = '1'"
+	    Rss: /atom.xml
+|3,0,3,1,1,0,1474009935,"    Rss: /atom.xml"
 "4	LINE	0
-	let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-|3,0,4,1,1,0,1473960027,"let g:WebDevIconsUnicodeDecorateFolderNodes = 1"
+	
+|3,0,4,1,1,0,1474009728,""
 "5	LINE	0
-	Plugin 'Xuyuanp/nerdtree-git-plugin'
-|3,0,5,1,1,0,1473959035,"Plugin 'Xuyuanp/nerdtree-git-plugin'"
+	
+|3,0,5,1,1,0,1474007635,""
 "6	LINE	0
-	let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
-|3,0,6,1,1,0,1473957956,"let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '"
+	
+|3,0,6,1,1,0,1474007634,""
 "7	LINE	0
-	let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-	let g:DevIconsEnableFoldersOpenClose = 1
-|3,0,7,1,2,0,1473956827,"let g:WebDevIconsUnicodeDecorateFolderNodes = 1","let g:DevIconsEnableFoldersOpenClose = 1"
+	fancybox: true
+|3,0,7,1,1,0,1474007633,"fancybox: true"
 "8	LINE	0
-	let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
-|3,0,8,1,1,0,1473955861,"let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''"
+	excerpt_link: Read More
+|3,0,8,1,1,0,1474007633,"excerpt_link: Read More"
 "9	LINE	0
-	" vim-devicon begins
-|3,0,9,1,1,0,1473955283,"\" vim-devicon begins"
+	# Content
+|3,0,9,1,1,0,1474007632,"# Content"
 "i	CHAR	0
 	y
 |3,0,18,0,1,0,0,"y"
@@ -623,238 +640,600 @@ $
 	uukkkkkkkkkkkjjjkjouukouukjjlo:uukjjddkkkkkkkk
 |3,0,30,0,1,0,0,"uukkkkkkkkkkkjjjkjouukouukjjlo:uukjjddkkkkkkkk"
 "-	CHAR	0
-	=
-|3,0,36,0,1,0,1473961165,"="
+	 
+|3,0,36,0,1,0,1474033086," "
 
 # File marks:
 'M  62  0  ~/Documents/Project/LumpyChen.github.io/_posts/2016-07-21-practical-vim.md
 |4,77,62,0,0,"~/Documents/Project/LumpyChen.github.io/_posts/2016-07-21-practical-vim.md"
 'N  11  15  ~/Documents/Repository/colour-schemes/vim/colors/slime-contrast.vim
 |4,78,11,15,0,"~/Documents/Repository/colour-schemes/vim/colors/slime-contrast.vim"
-'0  101  0  ~/.vimrc.bundles.local
-|4,48,101,0,1473982870,"~/.vimrc.bundles.local"
-'1  1  0  ~/Documents/NERD_tree_1
-|4,49,1,0,1473982762,"~/Documents/NERD_tree_1"
-'2  1  0  ~/Documents/NERD_tree_1
-|4,50,1,0,1473982757,"~/Documents/NERD_tree_1"
-'3  17  0  ~/.vimrc.bundles.local
-|4,51,17,0,1473982752,"~/.vimrc.bundles.local"
-'4  17  0  ~/.vimrc.bundles.local
-|4,52,17,0,1473982752,"~/.vimrc.bundles.local"
-'5  46  0  ~/NERD_tree_1
-|4,53,46,0,1473982451,"~/NERD_tree_1"
-'6  5  0  ~/Documents/NERD_tree_1
-|4,54,5,0,1473982266,"~/Documents/NERD_tree_1"
-'7  6  0  ~/Documents/NERD_tree_1
-|4,55,6,0,1473982266,"~/Documents/NERD_tree_1"
-'8  6  0  ~/Documents/NERD_tree_1
-|4,56,6,0,1473982266,"~/Documents/NERD_tree_1"
-'9  7  0  ~/Documents/NERD_tree_1
-|4,57,7,0,1473982266,"~/Documents/NERD_tree_1"
+'0  45  19  ~/Documents/Project/lumpychen.github.io/_config.yml
+|4,48,45,19,1474034013,"~/Documents/Project/lumpychen.github.io/_config.yml"
+'1  8  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,49,8,0,1474033882,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+'2  9  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,50,9,0,1474033882,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+'3  3  0  ~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md
+|4,51,3,0,1474033568,"~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md"
+'4  10  14  ~/.zshrc
+|4,52,10,14,1474033096,"~/.zshrc"
+'5  10  15  ~/.zshrc
+|4,53,10,15,1474033040,"~/.zshrc"
+'6  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,54,1,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+'7  9  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,55,9,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+'8  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,56,1,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+'9  10  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,57,10,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
 
 # Jumplist (newest first):
--'  101  0  ~/.vimrc.bundles.local
-|4,39,101,0,1473982870,"~/.vimrc.bundles.local"
--'  17  0  ~/.vimrc.bundles.local
-|4,39,17,0,1473982770,"~/.vimrc.bundles.local"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982762,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982762,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982760,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982760,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982757,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982757,"~/Documents/NERD_tree_1"
--'  13  2  ~/Documents/NERD_tree_1
-|4,39,13,2,1473982755,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982755,"~/Documents/NERD_tree_1"
--'  13  2  ~/Documents/NERD_tree_1
-|4,39,13,2,1473982755,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982755,"~/Documents/NERD_tree_1"
--'  17  0  ~/.vimrc.bundles.local
-|4,39,17,0,1473982752,"~/.vimrc.bundles.local"
--'  17  0  ~/.vimrc.bundles.local
-|4,39,17,0,1473982752,"~/.vimrc.bundles.local"
--'  17  0  ~/.vimrc.bundles.local
-|4,39,17,0,1473982752,"~/.vimrc.bundles.local"
--'  17  0  ~/.vimrc.bundles.local
-|4,39,17,0,1473982752,"~/.vimrc.bundles.local"
--'  100  0  ~/.vimrc.bundles.local
-|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
--'  100  0  ~/.vimrc.bundles.local
-|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
--'  100  0  ~/.vimrc.bundles.local
-|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
--'  100  0  ~/.vimrc.bundles.local
-|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
--'  100  0  ~/.vimrc.bundles.local
-|4,39,100,0,1473982705,"~/.vimrc.bundles.local"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  46  0  ~/NERD_tree_1
-|4,39,46,0,1473982451,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1473982436,"~/NERD_tree_1"
--'  5  0  ~/Documents/NERD_tree_1
-|4,39,5,0,1473982266,"~/Documents/NERD_tree_1"
--'  6  0  ~/Documents/NERD_tree_1
-|4,39,6,0,1473982266,"~/Documents/NERD_tree_1"
--'  6  0  ~/Documents/NERD_tree_1
-|4,39,6,0,1473982266,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/NERD_tree_1
-|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/NERD_tree_1
-|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/NERD_tree_1
-|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/NERD_tree_1
-|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
--'  5  0  ~/Documents/NERD_tree_1
-|4,39,5,0,1473982266,"~/Documents/NERD_tree_1"
--'  6  0  ~/Documents/NERD_tree_1
-|4,39,6,0,1473982266,"~/Documents/NERD_tree_1"
--'  6  0  ~/Documents/NERD_tree_1
-|4,39,6,0,1473982266,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/NERD_tree_1
-|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/NERD_tree_1
-|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/NERD_tree_1
-|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/NERD_tree_1
-|4,39,7,0,1473982266,"~/Documents/NERD_tree_1"
--'  12  2  ~/Documents/NERD_tree_1
-|4,39,12,2,1473982064,"~/Documents/NERD_tree_1"
--'  13  2  ~/Documents/NERD_tree_1
-|4,39,13,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
--'  12  2  ~/Documents/NERD_tree_1
-|4,39,12,2,1473982064,"~/Documents/NERD_tree_1"
--'  13  2  ~/Documents/NERD_tree_1
-|4,39,13,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473982064,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473982064,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,1473981990,"~/Documents/NERD_tree_1"
--'  11  2  ~/Documents/NERD_tree_1
-|4,39,11,2,1473981988,"~/Documents/NERD_tree_1"
--'  12  2  ~/Documents/NERD_tree_1
-|4,39,12,2,1473981988,"~/Documents/NERD_tree_1"
--'  13  2  ~/Documents/NERD_tree_1
-|4,39,13,2,1473981988,"~/Documents/NERD_tree_1"
--'  14  2  ~/Documents/NERD_tree_1
-|4,39,14,2,1473981988,"~/Documents/NERD_tree_1"
--'  13  2  ~/Documents/NERD_tree_1
-|4,39,13,2,1473981988,"~/Documents/NERD_tree_1"
+-'  45  19  ~/Documents/Project/lumpychen.github.io/_config.yml
+|4,39,45,19,1474034013,"~/Documents/Project/lumpychen.github.io/_config.yml"
+-'  14  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,14,0,1474034001,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,1,0,1474033997,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  16  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,16,2,1474033997,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  8  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,8,0,1474033882,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  9  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,9,0,1474033882,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  15  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,15,2,1474033879,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,1,0,1474033879,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  16  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,16,2,1474033879,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  3  0  ~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md
+|4,39,3,0,1474033568,"~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md"
+-'  3  0  ~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md
+|4,39,3,0,1474033568,"~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md"
+-'  3  0  ~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md
+|4,39,3,0,1474033568,"~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md"
+-'  3  0  ~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md
+|4,39,3,0,1474033568,"~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md"
+-'  10  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,10,0,1474033397,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  11  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,11,0,1474033397,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  11  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,11,0,1474033397,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  12  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,12,0,1474033397,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  17  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,17,2,1474033393,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  18  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,18,2,1474033393,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  18  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,18,2,1474033393,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  19  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,19,2,1474033393,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,1,0,1474033393,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  10  14  ~/.zshrc
+|4,39,10,14,1474033096,"~/.zshrc"
+-'  10  14  ~/.zshrc
+|4,39,10,14,1474033096,"~/.zshrc"
+-'  10  14  ~/.zshrc
+|4,39,10,14,1474033096,"~/.zshrc"
+-'  10  14  ~/.zshrc
+|4,39,10,14,1474033096,"~/.zshrc"
+-'  10  14  ~/.zshrc
+|4,39,10,14,1474033096,"~/.zshrc"
+-'  10  14  ~/.zshrc
+|4,39,10,14,1474033096,"~/.zshrc"
+-'  10  14  ~/.zshrc
+|4,39,10,14,1474033096,"~/.zshrc"
+-'  10  14  ~/.zshrc
+|4,39,10,14,1474033096,"~/.zshrc"
+-'  10  15  ~/.zshrc
+|4,39,10,15,1474033040,"~/.zshrc"
+-'  10  15  ~/.zshrc
+|4,39,10,15,1474033040,"~/.zshrc"
+-'  10  15  ~/.zshrc
+|4,39,10,15,1474033040,"~/.zshrc"
+-'  10  15  ~/.zshrc
+|4,39,10,15,1474033040,"~/.zshrc"
+-'  10  15  ~/.zshrc
+|4,39,10,15,1474033040,"~/.zshrc"
+-'  10  15  ~/.zshrc
+|4,39,10,15,1474033040,"~/.zshrc"
+-'  10  15  ~/.zshrc
+|4,39,10,15,1474033040,"~/.zshrc"
+-'  10  15  ~/.zshrc
+|4,39,10,15,1474033040,"~/.zshrc"
+-'  9  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,9,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  10  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,10,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  11  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,11,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  11  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,11,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  11  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,11,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  11  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,11,0,1474032974,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  15  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,15,2,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,1,0,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  16  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,16,2,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,1,0,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  16  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,16,2,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,1,0,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  16  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,16,2,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  1  0  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,1,0,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  16  2  ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+|4,39,16,2,1474032955,"~/Documents/Project/lumpychen.github.io/NERD_tree_1"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
+-'  10  6  ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+|4,39,10,6,1474032948,"~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml"
 
 # History of marks within files (newest to oldest):
+
+> ~/Documents/Project/lumpychen.github.io/_config.yml
+	*	1474034010	0
+	"	45	19
+	^	17	31
+	.	17	30
+	+	6	12
+	+	7	42
+	+	8	25
+	+	9	12
+	+	10	14
+	+	15	9
+	+	15	22
+	+	19	30
+	+	10	12
+	+	22	27
+	+	21	20
+	+	25	0
+	+	37	22
+	+	39	14
+	+	40	19
+	+	41	15
+	+	49	19
+	+	90	12
+	+	23	1
+	+	57	25
+	+	62	31
+	+	58	18
+	+	60	2
+	+	61	2
+	+	62	2
+	+	58	0
+	+	58	18
+	+	59	0
+	+	60	0
+	+	61	0
+	+	62	0
+	+	59	0
+	+	82	12
+	+	62	8
+	+	64	46
+	+	62	0
+	+	62	1
+	+	62	0
+	+	63	0
+	+	62	0
+	+	63	0
+	+	63	1
+	+	64	16
+	+	64	0
+	+	65	0
+	+	9	12
+	+	6	12
+	+	7	41
+	+	8	25
+	+	10	11
+	+	15	22
+	+	19	30
+	+	62	0
+	+	6	12
+	+	62	10
+	+	62	0
+	+	62	22
+	+	62	38
+	+	62	0
+	+	62	1
+	+	62	0
+	+	63	0
+	+	62	0
+	+	71	13
+	+	73	11
+	+	78	0
+	+	75	1
+	+	76	1
+	+	77	1
+	+	78	2
+	+	74	0
+	+	6	12
+	+	7	41
+	+	9	12
+	+	10	11
+	+	8	25
+	+	15	22
+	+	19	28
+	+	20	11
+	+	19	33
+	+	21	16
+	+	23	9
+	+	24	0
+	+	23	0
+	+	36	0
+	+	21	20
+	+	13	4
+	+	14	1
+	+	11	1
+	+	10	9
+	+	12	6
+	+	17	0
+	+	18	7
+	+	17	34
+	+	18	11
+	+	17	34
+	+	18	7
+	+	17	30
+
+> ~/Documents/Project/lumpychen.github.io/NERD_tree_1
+	*	1474034001	0
+	"	14	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Project/lumpychen.github.io/source/_posts/hello-world.md
+	*	1474033541	0
+	"	3	0
+	^	3	0
+	.	3	0
+	+	3	0
+
+> ~/.zshrc
+	*	1474033093	0
+	"	10	14
+	.	10	14
+	+	10	0
+	+	10	15
+	+	10	14
+	+	10	15
+	+	10	25
+	+	10	24
+	+	10	48
+	+	10	14
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/_config.yml
+	*	1474032947	0
+	"	10	6
+	^	10	7
+	.	10	6
+	+	7	39
+	+	8	37
+	+	8	0
+	+	2	33
+	+	8	0
+	+	4	70
+	+	7	39
+	+	6	31
+	+	22	14
+	+	4	23
+	+	4	0
+	+	10	6
+	+	22	0
+	+	10	6
+
+> ~/Documents/Project/lumpychen.github.io/.gitignore
+	*	1474032534	0
+	"	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/source/scss/apollo.scss
+	*	1474032189	0
+	"	16	14
+	^	16	16
+	.	16	14
+	+	15	14
+	+	16	14
+	+	15	16
+	+	16	16
+	+	15	14
+	+	16	14
+	+	15	15
+	+	16	15
+	+	15	14
+	+	16	14
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/source/css/NERD_tree_2
+	*	1474030426	0
+	"	11	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/source/css/apollo.css
+	*	1474030355	0
+	"	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/source/scss/_partial/header.scss
+	*	1474030296	0
+	"	18	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/.gitignore
+	*	1474030161	0
+	"	1	0
+
+> ~/Documents/Project/lumpychen.github.io/public/sitemap.xml
+	*	1474030105	0
+	"	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/layout/partial/NERD_tree_2
+	*	1474030104	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/layout/partial/layout.jade
+	*	1474029929	0
+	"	9	33
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/layout/partial/head.jade
+	*	1474029900	0
+	"	11	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/layout/partial/nav.jade
+	*	1474029860	0
+	"	6	75
+	^	6	76
+	.	6	75
+	+	6	75
+
+> ~/Documents/Project/lumpychen.github.io/NERD_tree_2
+	*	1474029859	0
+	"	22	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/NERD_tree_1
+	*	1474020487	0
+	"	13	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/doc/doc-zh.md
+	*	1474020399	0
+	"	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/NERD_tree_2
+	*	1474017727	0
+	"	10	2
+	.	1	0
+	+	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/layout/NERD_tree_1
+	*	1474016556	0
+	"	11	0
+	.	1	0
+	+	1	0
+
+> ~/.oh-my-zsh/themes/ys.zsh-theme
+	*	1474015353	0
+	"	13	32
+	^	13	33
+	.	13	32
+	+	12	0
+	+	12	35
+	+	13	0
+	+	14	0
+	+	12	39
+	+	13	36
+	+	12	32
+	+	13	32
+
+> ~/.oh-my-zsh/themes/ys
+	*	1474015318	0
+	"	1	0
+
+> ~/Documents/Conf-mac/Vim/.vimrc.bundles.local
+	*	1474015096	0
+	"	59	21
+
+> ~/.oh-my-zsh/themes/jonathan.zsh-theme
+	*	1474014625	0
+	"	130	18
+	^	67	47
+	.	67	46
+	+	62	0
+	+	62	38
+	+	62	47
+	+	62	87
+	+	62	38
+	+	62	85
+	+	67	0
+	+	68	0
+	+	67	50
+	+	62	89
+	+	66	0
+	+	67	0
+	+	66	51
+	+	66	0
+	+	62	42
+	+	63	45
+	+	64	40
+	+	64	0
+	+	65	44
+	+	66	45
+	+	67	46
+	n	127	4
+
+> ~/.oh-my-zsh/themes/agnoster.zsh-theme
+	*	1474011982	0
+	"	52	0
+
+> ~/Documents/Project/lumpychen.github.io/source/_posts/hello.md
+	*	1474008470	0
+	"	1	0
+
+> ~/Documents/Project/lumpychen.github.io/db.json
+	*	1474006744	0
+	"	1	0
+
+> ~/Documents/Project/lumpychen.github.io/themes/apollo/layout/_partial/header.ejs
+	*	1474006728	0
+	"	10	39
+	.	10	0
+	+	10	0
+	+	9	0
+	+	10	70
+	+	10	0
+
+> ~/Documents/Project/lumpychen.github.io/package.json
+	*	1474002130	0
+	"	2	0
+
+> /Users/Lumpychen (Deleted)/Documents/DEMO/FuckWebpack/src/ui/layouts/App.jsx
+	*	1473997672	0
+	"	1	0
+	^	4	21
+	.	4	20
+	+	4	0
+	+	4	20
+
+> /Users/Lumpychen (Deleted)/Documents/DEMO/FuckWebpack/src/ui/sagas/NERD_tree_2
+	*	1473997551	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> /Users/Lumpychen (Deleted)/Documents/DEMO/FuckWebpack/src/ui/sagas/index.js
+	*	1473997526	0
+	"	1	0
+
+> /Users/Lumpychen (Deleted)/Documents/DEMO/FuckWebpack/NERD_tree_1
+	*	1473997524	0
+	"	19	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Conf-mac/Vim/NERD_tree_1
+	*	1473992797	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Conf-mac/.git/COMMIT_EDITMSG
+	*	1473983056	0
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	22
+	+	22	0
+	+	11	0
+	+	1	13
+	+	2	0
+	+	1	16
+
+> ~/Documents/Conf-mac/Vim/.spf13-vim-3/NERD_tree_1
+	*	1473983018	0
+	"	13	0
+	.	1	0
+	+	1	0
 
 > ~/.vimrc.bundles.local
 	*	1473982869	0
@@ -954,12 +1333,6 @@ $
 	+	7	0
 	+	8	0
 	+	16	18
-
-> ~/Documents/NERD_tree_1
-	*	1473982760	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/NERD_tree_1
 	*	1473982448	0
@@ -1251,10 +1624,10 @@ $
 	+	1	0
 
 > ~/Documents/new.html
-	*	1473952329	0
-	"	9	49
-	^	9	50
-	.	9	49
+	*	1473953338	0
+	"	16	57
+	^	16	58
+	.	16	57
 	+	2	0
 	+	1	5
 	+	2	0
@@ -1284,6 +1657,13 @@ $
 	+	12	24
 	+	16	55
 	+	9	49
+	+	16	57
+
+> ~/Documents/NERD_tree_1
+	*	1473952546	0
+	"	14	0
+	.	1	0
+	+	1	0
 
 > ~/Documents/NERD_tree_2
 	*	1473951659	0
@@ -1346,16 +1726,6 @@ $
 > ~/Documents/Repo/nerd-fonts/install.sh
 	*	1473930187	0
 	"	23	0
-
-> ~/Documents/Conf-mac/.git/COMMIT_EDITMSG
-	*	1473929753	0
-	"	1	13
-	^	1	14
-	.	1	13
-	+	1	22
-	+	13	0
-	+	2	0
-	+	1	13
 
 > ~/Documents/Conf-mac/.vimrc
 	*	1473908884	0
@@ -1784,273 +2154,3 @@ $
 	"	14	0
 	.	1	0
 	+	1	0
-
-> /usr/local/share/vim/vim74/doc/help.txt
-	*	1473131948	0
-	"	10	30
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/2016-02-17-welcome-to-jekyll.md
-	*	1473076412	0
-	"	5	0
-
-> ~/undotree_2
-	*	1473076040	0
-	"	6	1
-	.	3	0
-	+	910	0
-	+	908	0
-	+	885	0
-	+	862	0
-	+	844	0
-	+	840	0
-	+	757	0
-	+	674	0
-	+	665	0
-	+	664	0
-	+	648	0
-	+	631	0
-	+	614	0
-	+	597	0
-	+	580	0
-	+	377	0
-	+	150	0
-	+	3	0
-
-> ~/diffpanel_3
-	*	1473076026	0
-	"	1	0
-	.	6	0
-	+	8	0
-	+	6	0
-
-> ~/Documents/Project/LumpyChen.github.io/NERD_tree_1
-	*	1473070665	0
-	"	12	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/ControlP
-	*	1473070237	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/DEMO/UI-Web/ControlP
-	*	1473058537	0
-	"	10	0
-	.	2	0
-	+	1	0
-	+	2	0
-
-> ~/Documents/DEMO/UI-Web/LICENSE
-	*	1473058537	0
-	"	1	0
-
-> ~/Documents/DEMO/UI-Web/.eslintrc
-	*	1473058477	0
-	"	21	20
-	^	21	21
-	.	21	20
-	+	21	20
-
-> ~/Documents/DEMO/UI-Web/src/routes/index.js
-	*	1473053871	0
-	"	14	0
-
-> ~/Documents/DEMO/UI-Web/.editorconfig
-	*	1473053487	0
-	"	25	0
-
-> ~/.vimrc.before
-	*	1472993770	0
-	"	106	0
-	.	2	0
-	+	1	104
-	+	1	106
-	+	2	0
-
-> ~/Documents/Repository/colour-schemes/vim/colors/NERD_tree_1
-	*	1472993597	0
-	"	24	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Repository/colour-schemes/vim/colors/NERD_tree_2
-	*	1472993575	0
-	"	78	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/DEMO/UI-Web/src/saga/NERD_tree_3
-	*	1472993488	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Repository/colour-schemes/vim/colors/slime-contrast.vim
-	*	1472991144	0
-	"	61	29
-	n	11	15
-
-> ~/Documents/Repository/colour-schemes/vim/colors/bold.vim
-	*	1472989794	0
-	"	1	0
-	.	17	0
-	+	17	0
-
-> ~/Documents/Repository/nerd-fonts/NERD_tree_1
-	*	1472988951	0
-	"	17	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Repository/colour-schemes/vim/colors/,
-	*	1472988684	0
-	"	1	0
-	^	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/2016-08-31-Nerdtree.md
-	*	1472984369	0
-	"	33	6
-	^	53	22
-	.	53	19
-	+	23	11
-	+	18	33
-	+	19	34
-	+	21	20
-	+	21	40
-	+	21	24
-	+	59	0
-	+	58	0
-	+	51	17
-	+	37	8
-	+	53	19
-
-> ~/.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim
-	*	1472979155	0
-	"	155	52
-	^	155	53
-	.	155	52
-	+	155	52
-
-> ~/Documents/Project/web_cv/NERD_tree_7
-	*	1472975989	0
-	"	42	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/NERD_tree_2
-	*	1472960588	0
-	"	40	1
-	.	1	0
-	+	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/2016-03-23-jquery-tips.md
-	*	1472960481	0
-	"	62	2
-
-> ~/Documents/Project/LumpyChen.github.io/NERD_tree_3
-	*	1472946134	0
-	"	15	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/NERD_tree_4
-	*	1472921956	0
-	"	15	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/bundle/nerdtree/lib/nerdtree/opener.vim
-	*	1472921829	0
-	"	260	46
-	^	260	47
-	.	260	46
-	+	260	46
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/2016-03-26-arithmetic.md
-	*	1472920431	0
-	"	10	0
-	.	10	0
-	+	10	0
-	+	9	0
-	+	10	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/NERD_tree_9
-	*	1472920238	0
-	"	19	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/NERD_tree_4
-	*	1472918655	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/NERD_tree_7
-	*	1472918654	0
-	"	7	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/DEMO/douban/dist/fetch.js
-	*	1472918246	0
-	"	10	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/NERD_tree_8
-	*	1472918243	0
-	"	6	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/NERD_tree_5
-	*	1472918197	0
-	"	6	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/DEMO/douban/dist/index.html
-	*	1472918116	0
-	"	1	0
-
-> ~/Documents/Project/LumpyChen.github.io/_posts/2016-08-29-question.md
-	*	1472910547	0
-	"	3	0
-	^	15	2
-	.	9	0
-	+	10	16
-	+	4	17
-	+	10	0
-	+	9	0
-	+	10	23
-	+	10	159
-	+	10	0
-	+	10	12
-	+	10	35
-	+	10	0
-	+	10	41
-	+	10	0
-	+	10	21
-	+	10	0
-	+	10	1
-	+	10	21
-	+	10	10
-	+	10	35
-	+	10	0
-	+	10	4
-	+	10	0
-	+	10	63
-	+	10	0
-	+	10	13
-	+	10	1
-	+	10	0
-	+	10	117
-	+	10	0
-	+	10	27
-	+	11	0
-	+	12	13
-	+	13	24
-	+	14	14
-	+	15	1
-	+	9	0

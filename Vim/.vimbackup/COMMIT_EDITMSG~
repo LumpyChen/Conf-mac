@@ -8,214 +8,44 @@
 # Your branch is up-to-date with 'origin/master'.
 #
 # Changes to be committed:
-#	new file:   Alfred/Alfred.alfredpreferences/preferences/local/d2352652698b160615d0869c6074f6165f158bf6/remote/prefs.plist
+#	new file:   Alfred/Alfred.alfredpreferences/preferences/features/defaultresults/prefs.plist
+#	new file:   Alfred/Alfred.alfredpreferences/preferences/features/filesearch/actions/prefs.plist
+#	new file:   Alfred/Alfred.alfredpreferences/preferences/features/filesearch/navigation/prefs.plist
 #	modified:   README.md
-#	new file:   Vim/.spf13-vim-3
-#	new file:   Vim/.vim/.vimrc.plugins.local
-#	new file:   Vim/.vim/bundle/HTML-AutoCloseTag
-#	new file:   Vim/.vim/bundle/PIV
-#	new file:   Vim/.vim/bundle/auto-pairs
-#	new file:   Vim/.vim/bundle/colour-schemes
-#	new file:   Vim/.vim/bundle/conflict-marker.vim
-#	new file:   Vim/.vim/bundle/ctrlp-funky
-#	new file:   Vim/.vim/bundle/ctrlp.vim
-#	new file:   Vim/.vim/bundle/emmet-vim
-#	new file:   Vim/.vim/bundle/fonts
-#	new file:   Vim/.vim/bundle/gist-vim
-#	new file:   Vim/.vim/bundle/matchit.zip
-#	new file:   Vim/.vim/bundle/neocomplete.vim
-#	new file:   Vim/.vim/bundle/neosnippet
-#	new file:   Vim/.vim/bundle/neosnippet-snippets
-#	new file:   Vim/.vim/bundle/nerdcommenter
-#	new file:   Vim/.vim/bundle/nerdtree
-#	new file:   Vim/.vim/bundle/nerdtree-git-plugin
-#	new file:   Vim/.vim/bundle/python-mode
-#	new file:   Vim/.vim/bundle/python.vim
-#	new file:   Vim/.vim/bundle/python_match.vim
-#	new file:   Vim/.vim/bundle/pythoncomplete
-#	new file:   Vim/.vim/bundle/rainbow
-#	new file:   Vim/.vim/bundle/restore_view.vim
-#	new file:   Vim/.vim/bundle/rust.vim
-#	new file:   Vim/.vim/bundle/salt-vim
-#	new file:   Vim/.vim/bundle/sessionman.vim
-#	new file:   Vim/.vim/bundle/seti.vim
-#	new file:   Vim/.vim/bundle/slime-contrast.vim/slime-contrast.vim
-#	new file:   Vim/.vim/bundle/syntastic
-#	new file:   Vim/.vim/bundle/tabular
-#	new file:   Vim/.vim/bundle/tagbar
-#	new file:   Vim/.vim/bundle/tlib_vim
-#	new file:   Vim/.vim/bundle/undotree
-#	new file:   Vim/.vim/bundle/vim-abolish
-#	new file:   Vim/.vim/bundle/vim-addon-mw-utils
-#	new file:   Vim/.vim/bundle/vim-airline
-#	new file:   Vim/.vim/bundle/vim-airline-themes
-#	new file:   Vim/.vim/bundle/vim-bufferline
-#	new file:   Vim/.vim/bundle/vim-coffee-script
-#	new file:   Vim/.vim/bundle/vim-coloresque
-#	new file:   Vim/.vim/bundle/vim-colors
-#	new file:   Vim/.vim/bundle/vim-colors-solarized
-#	new file:   Vim/.vim/bundle/vim-colorschemes
-#	new file:   Vim/.vim/bundle/vim-commentary
-#	new file:   Vim/.vim/bundle/vim-css3-syntax
-#	new file:   Vim/.vim/bundle/vim-cucumber
-#	new file:   Vim/.vim/bundle/vim-cucumber-align-pipes
-#	new file:   Vim/.vim/bundle/vim-devicons
-#	new file:   Vim/.vim/bundle/vim-easymotion
-#	new file:   Vim/.vim/bundle/vim-fugitive
-#	new file:   Vim/.vim/bundle/vim-haml
-#	new file:   Vim/.vim/bundle/vim-indent-guides
-#	new file:   Vim/.vim/bundle/vim-javascript
-#	new file:   Vim/.vim/bundle/vim-json
-#	new file:   Vim/.vim/bundle/vim-jst
-#	new file:   Vim/.vim/bundle/vim-less
-#	new file:   Vim/.vim/bundle/vim-litecorrect
-#	new file:   Vim/.vim/bundle/vim-markdown
-#	new file:   Vim/.vim/bundle/vim-multiple-cursors
-#	new file:   Vim/.vim/bundle/vim-nerdtree-syntax-highlight
-#	new file:   Vim/.vim/bundle/vim-nerdtree-tabs
-#	new file:   Vim/.vim/bundle/vim-over
-#	new file:   Vim/.vim/bundle/vim-php-namespace
-#	new file:   Vim/.vim/bundle/vim-preview
-#	new file:   Vim/.vim/bundle/vim-rails
-#	new file:   Vim/.vim/bundle/vim-repeat
-#	new file:   Vim/.vim/bundle/vim-signify
-#	new file:   Vim/.vim/bundle/vim-snippets
-#	new file:   Vim/.vim/bundle/vim-surround
-#	new file:   Vim/.vim/bundle/vim-textobj-indent
-#	new file:   Vim/.vim/bundle/vim-textobj-quote
-#	new file:   Vim/.vim/bundle/vim-textobj-sentence
-#	new file:   Vim/.vim/bundle/vim-textobj-user
-#	new file:   Vim/.vim/bundle/vim-toml
-#	new file:   Vim/.vim/bundle/vim-twig
-#	new file:   Vim/.vim/bundle/vim-wordy
-#	new file:   Vim/.vim/bundle/vundle
-#	new file:   Vim/.vim/bundle/webapi-vim
-#	new file:   Vim/.vim/bundle/wildfire.vim
-#	new file:   Vim/.vimbackup/.eslintrc~
-#	new file:   Vim/.vimbackup/.vimrc.bundles.local~
-#	new file:   Vim/.vimbackup/.vimrc.local~
-#	new file:   Vim/.vimbackup/.vimrc.plugins.local~
-#	new file:   Vim/.vimbackup/2016-03-04-second-tough-javascript.md~
-#	new file:   Vim/.vimbackup/2016-03-05-third-tough-javascript.md~
-#	new file:   Vim/.vimbackup/2016-03-08-encode.md~
-#	new file:   Vim/.vimbackup/2016-03-20-ajax.md~
-#	new file:   Vim/.vimbackup/2016-03-26-arithmetic.md~
-#	new file:   Vim/.vimbackup/2016-03-28-data-struction.md~
-#	new file:   Vim/.vimbackup/2016-07-21-practical-vim.md~
-#	new file:   Vim/.vimbackup/2016-08-29-question.md~
-#	new file:   Vim/.vimbackup/2016-08-29-system.md~
-#	new file:   Vim/.vimbackup/2016-08-31-Econometrics.md~
-#	new file:   Vim/.vimbackup/2016-08-31-Nerdtree.md~
-#	new file:   Vim/.vimbackup/2016-08-31-System.md~
-#	new file:   Vim/.vimbackup/2016-09-02-Cvim.md~
-#	new file:   Vim/.vimbackup/2016-09-07-operation-research.md~
-#	new file:   Vim/.vimbackup/AppContainer.jsx~
-#	new file:   Vim/.vimbackup/COMMIT_EDITMSG~
-#	new file:   Vim/.vimbackup/README.md~
-#	new file:   Vim/.vimbackup/index.html~
-#	new file:   Vim/.vimbackup/index.js~
-#	new file:   Vim/.vimbackup/opener.vim~
-#	new file:   Vim/.vimbackup/shadowsocks_sysconf~
-#	new file:   Vim/.vimbackup/slime-contrast.vim~
-#	new file:   Vim/.vimbackup/ui_glue.vim~
-#	new file:   Vim/.viminfo
-#	new file:   Vim/.vimrc.bundles.local
-#	new file:   Vim/.vimrc.local
-#	new file:   Vim/.vimundo/%Users%Lumpychen%.spf13-vim-3%.vimrc
-#	new file:   Vim/.vimundo/%Users%Lumpychen%.vim%.vimrc.plugins.local
-#	new file:   Vim/.vimundo/%Users%Lumpychen%.vim%bundle%nerdtree%autoload%nerdtree%ui_glue.vim
-#	new file:   Vim/.vimundo/%Users%Lumpychen%.vim%bundle%nerdtree%lib%nerdtree%opener.vim
-#	new file:   Vim/.vimundo/%Users%Lumpychen%.vimrc.bundles.local
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%DEMO%MEE2016%.git%COMMIT_EDITMSG
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%DEMO%UI%index.html
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%DEMO%UI-Web%.eslintrc
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%DEMO%UI-Web%src%containers%AppContainer.jsx
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%DEMO%UI-Web%src%saga%index.js
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%DEMO%weibo%index.html
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%.git%COMMIT_EDITMSG
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%2016-08-24-practical-vim.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%2016-08-29-system.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-03-04-second-tough-javascript.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-03-05-third-tough-javascript.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-03-08-encode.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-03-20-ajax.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-03-26-arithmetic.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-03-28-data-struction.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-07-21-practical-vim.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-08-31-Econometrics.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-08-31-Nerdtree.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-08-31-System.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-09-02-Cvim.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Project%LumpyChen.github.io%_posts%2016-09-07-operation-research.md
-#	new file:   Vim/.vimundo/%Users%Lumpychen%Documents%Repository%WIEmaterial%README.md
-#	new file:   Vim/.vimundo/%Users%lumpychen%.vimrc.local
-#	new file:   Vim/.vimundo/%Users%lumpychen%Documents%Conf-mac%.git%COMMIT_EDITMSG
-#	new file:   Vim/.vimundo/%Users%lumpychen%Documents%Conf-mac%README.md
-#	new file:   Vim/.vimviews/=+Applications=+ShadowsocksX.app=+Contents=+Resources=+proxy.pac.gz=
-#	new file:   Vim/.vimviews/=+Applications=+ShadowsocksX.app=+Contents=+Resources=+shadowsocks_sysconf=
-#	new file:   Vim/.vimviews/~=+.ShadowsocksX=+gfwlist.js=
-#	new file:   Vim/.vimviews/~=+.vim=+.vimrc.plugins.local=
-#	new file:   Vim/.vimviews/~=+.vim=+bundle=+nerdtree=+autoload=+nerdtree=+ui_glue.vim=
-#	new file:   Vim/.vimviews/~=+.vim=+bundle=+nerdtree=+lib=+nerdtree=+opener.vim=
-#	new file:   Vim/.vimviews/~=+.vimrc.before=
-#	new file:   Vim/.vimviews/~=+.vimrc.bundles.local=
-#	new file:   Vim/.vimviews/~=+.vimrc.bundles=
-#	new file:   Vim/.vimviews/~=+.vimrc.local=
-#	new file:   Vim/.vimviews/~=+.vimrc=
-#	new file:   Vim/.vimviews/~=+Documents=+1.md=
-#	new file:   Vim/.vimviews/~=+Documents=+6d.mp=
-#	new file:   Vim/.vimviews/~=+Documents=+Conf-mac=+.git=+COMMIT_EDITMSG=
-#	new file:   Vim/.vimviews/~=+Documents=+Conf-mac=+README.md=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+MEE2016=+.git=+COMMIT_EDITMSG=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+.editorconfig=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+.eslintrc=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+LICENSE=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+server=+main.js=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+src=+containers=+AppContainer.jsx=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+src=+main.js=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+src=+routes=+Home=+components=+HomeView.js=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+src=+routes=+Signup=+containers=+SignupContainer.js=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+src=+routes=+Signup=+index.js=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+src=+routes=+index.js=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI-Web=+src=+saga=+index.js=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI=+index.html=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+UI=+server.js=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+douban=+dist=+index.html=
-#	new file:   Vim/.vimviews/~=+Documents=+DEMO=+weibo=+index.html=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+.git=+COMMIT_EDITMSG=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+2016-08-24-practical-vim.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+2016-08-24-pratical-vim.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+2016-08-29-system.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-02-17-welcome-to-jekyll.markdown=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-02-17-welcome-to-jekyll.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-02-28-flyleaf.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-03-first-tough-javascript.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-04-second-tough-javascript.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-05-third-tough-javascript.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-08-encode.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-20-ajax.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-23-jquery-tips.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-26-arithmetic.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-28-data-struction.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-03-30-js-module.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-05-03-CSnetwork.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-05-08-Redux.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-05-13-vuejs.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-07-11-flexbox-1.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-07-12-flexbox-2.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-07-21-practical-vim.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-08-19-go6d.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-08-29-question.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-08-31-Econometrics.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-08-31-Nerdtree.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-08-31-System.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-09-02-Cvim.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+_posts=+2016-09-07-operation-research.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+img=+.DS_Store=
-#	new file:   Vim/.vimviews/~=+Documents=+Project=+LumpyChen.github.io=+index.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Repository=+WIEmaterial=+README.md=
-#	new file:   Vim/.vimviews/~=+Documents=+Repository=+colour-schemes=+vim=+colors=+bold.vim=
-#	new file:   Vim/.vimviews/~=+Documents=+Repository=+colour-schemes=+vim=+colors=+slime-contrast.vim=
+#	modified:   Vim/.vim/.vimrc.plugins.local
+#	new file:   Vim/.vimbackup/.gitignore~
+#	modified:   Vim/.vimbackup/.vimrc.bundles.local~
+#	modified:   Vim/.vimbackup/.vimrc.local~
+#	modified:   Vim/.vimbackup/.vimrc.plugins.local~
+#	modified:   Vim/.vimbackup/COMMIT_EDITMSG~
+#	modified:   Vim/.vimbackup/README.md~
+#	new file:   Vim/.vimbackup/new.html~
+#	modified:   Vim/.viminfo
+#	modified:   Vim/.vimrc.bundles.local
+#	modified:   Vim/.vimrc.local
+#	new file:   Vim/.vimswap/new.html.swp
+#	modified:   Vim/.vimundo/%Users%Lumpychen%.vim%.vimrc.plugins.local
+#	modified:   Vim/.vimundo/%Users%Lumpychen%.vimrc.bundles.local
+#	modified:   Vim/.vimundo/%Users%lumpychen%.vimrc.local
+#	modified:   Vim/.vimundo/%Users%lumpychen%Documents%Conf-mac%.git%COMMIT_EDITMSG
+#	modified:   Vim/.vimundo/%Users%lumpychen%Documents%Conf-mac%README.md
+#	new file:   Vim/.vimundo/%Users%lumpychen%Documents%Demo%new.html
+#	new file:   Vim/.vimundo/%Users%lumpychen%Documents%Repo%devicons-master%new.html
+#	new file:   Vim/.vimundo/%Users%lumpychen%Documents%new.html
+#	modified:   Vim/.vimviews/~=+.vim=+.vimrc.plugins.local=
+#	new file:   Vim/.vimviews/~=+.vim=+bundle=+vim-devicons=+nerdtree_plugin=+webdevicons.vim=
+#	new file:   Vim/.vimviews/~=+.vim=+bundle=+vim-devicons=+plugin=+webdevicons.vim=
+#	modified:   Vim/.vimviews/~=+.vimrc.bundles.local=
+#	modified:   Vim/.vimviews/~=+.vimrc.bundles=
+#	modified:   Vim/.vimviews/~=+.vimrc.local=
+#	modified:   Vim/.vimviews/~=+.vimrc=
+#	modified:   Vim/.vimviews/~=+Documents=+Conf-mac=+.git=+COMMIT_EDITMSG=
+#	new file:   Vim/.vimviews/~=+Documents=+Conf-mac=+.gitignore=
+#	modified:   Vim/.vimviews/~=+Documents=+Conf-mac=+README.md=
+#	new file:   Vim/.vimviews/~=+Documents=+Demo=+new.html=
+#	new file:   Vim/.vimviews/~=+Documents=+Repo=+devicons-master=+new.html=
+#	new file:   Vim/.vimviews/~=+Documents=+Repo=+nerd-fonts=+install.sh=
+#	new file:   Vim/.vimviews/~=+Documents=+new.html=
 #
 # Changes not staged for commit:
 #	modified:   Vim/.spf13-vim-3 (modified content)
